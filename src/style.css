@@ -7,7 +7,7 @@
 :root {
   --main-bg-color: #f0e7db;
   --main-txt-color: #1a202c;
-  --main-header-color: #f4f4f4;
+  --main-secondary-color: #ffeded;
 }
 
 div.window-container {
@@ -19,12 +19,12 @@ div.window-container {
 
 /* Header */
 header {
-  background-color: var(--main-header-color);
+  background-color: var(--main-secondary-color);
   padding: 10px;
 }
 
 header .header-container {
-  max-width: 600px;
+  max-width: 700px;
   display: flex;
   justify-content: space-between;
   margin-right: auto;
@@ -43,4 +43,30 @@ button.theme-button {
   cursor: pointer;
   width: 30px;
   height: 20px;
+}
+
+/* Main content */
+
+div.main-container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.greeting {
+  background-color: var(--main-secondary-color);
+  padding: 10px;
+  text-align: center;
+}
+
+div.name-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+img.my-photo {
+  border-radius: 50%;
+  border: solid 2px var(--main-secondary-color);
+  width: 120px;
+  height: 120px;
 }
