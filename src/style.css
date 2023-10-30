@@ -3,3 +3,44 @@
   margin: 0px;
   padding: 0px;
 }
+
+:root {
+  --main-bg-color: #f0e7db;
+  --main-txt-color: #1a202c;
+  --main-header-color: #f4f4f4;
+}
+
+div.window-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+
+/* Header */
+header {
+  background-color: var(--main-header-color);
+  padding: 10px;
+}
+
+header .header-container {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+}
+
+button.theme-button {
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+}
