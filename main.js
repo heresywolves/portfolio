@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n  box-sizing: border-box;\n  margin: 0px;\n  padding: 0px;\n}\n\n:root {\n  --main-bg-color: #f0e7db;\n  --main-txt-color: #1a202c;\n  --main-secondary-color: #ffeded;\n}\n\ndiv.window-container {\n  width: 100vw;\n  min-height: 100vh;\n  background-color: var(--main-bg-color);\n  color: var(--main-txt-color);\n}\n\n/* Header */\nheader {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n}\n\nheader .header-container {\n  max-width: 700px;\n  display: flex;\n  justify-content: space-between;\n  margin-right: auto;\n  margin-left: auto;\n  \n}\n\nheader ul {\n  display: flex;\n  justify-content: space-between;\n  list-style: none;\n  gap: 30px;\n}\n\nbutton.theme-button {\n  cursor: pointer;\n  width: 30px;\n  height: 20px;\n}\n\n/* Main content */\n\ndiv.main-container {\n  max-width: 600px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\ndiv.greeting {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n  text-align: center;\n}\n\ndiv.name-card-container {\n  display: flex;\n  justify-content: space-between;\n}\n\nimg.my-photo {\n  border-radius: 50%;\n  border: solid 2px var(--main-secondary-color);\n  width: 120px;\n  height: 120px;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://portfolio/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n  box-sizing: border-box;\n  margin: 0px;\n  padding: 0px;\n}\n\n:root {\n  --main-bg-color: #f0e7db;\n  --main-txt-color: #1a202c;\n  --main-secondary-color: #ffeded;\n}\n\ndiv.window-container {\n  width: 100vw;\n  min-height: 100vh;\n  background-color: var(--main-bg-color);\n  color: var(--main-txt-color);\n}\n\n/* Header */\nheader {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n}\n\nheader .header-container {\n  max-width: 700px;\n  display: flex;\n  justify-content: space-between;\n  margin-right: auto;\n  margin-left: auto;\n  \n}\n\nheader ul {\n  display: flex;\n  justify-content: space-between;\n  list-style: none;\n  gap: 10px;\n}\n\nbutton.theme-button {\n  cursor: pointer;\n  width: 30px;\n  height: 20px;\n}\n\n/* Main content */\n\ndiv.main-container {\n  max-width: 650px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\ndiv.greeting {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n  text-align: center;\n}\n\ndiv.name-card-container {\n  display: flex;\n  justify-content: space-between;\n}\n\nimg.my-photo {\n  border-radius: 50%;\n  border: solid 2px var(--main-secondary-color);\n  width: 120px;\n  height: 120px;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://portfolio/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,13 +110,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/imageSlider.js":
+/*!****************************!*\
+  !*** ./src/imageSlider.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/webpack.png */ \"./src/img/webpack.png\");\n/* harmony import */ var _img_npm_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/npm.png */ \"./src/img/npm.png\");\n/* harmony import */ var _img_jest_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/jest.png */ \"./src/img/jest.png\");\n/* harmony import */ var _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/javascript.png */ \"./src/img/javascript.png\");\n/* harmony import */ var _img_github_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/github.png */ \"./src/img/github.png\");\n\n\n\n\n\n\nfunction Init (doc) {\n  const wrapper = document.createElement('div');\n  wrapper.classList.add('slider-wrapper');\n  \n  const imageArr = [\n    _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__,\n    _img_npm_png__WEBPACK_IMPORTED_MODULE_1__,\n    _img_jest_png__WEBPACK_IMPORTED_MODULE_2__,\n    _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__,\n    _img_github_png__WEBPACK_IMPORTED_MODULE_4__\n  ]\n  \n  const imageNum = imageArr.length;\n  for (let i = 0; i < imageNum; i++) {\n    const imageSrc = imageArr[i];\n    const img = document.createElement('img');\n    img.src = imageSrc;\n    img.style.width = '50px';\n    wrapper.appendChild(img);\n  }\n\n  doc.appendChild(wrapper);\n\n}\n\nlet imageSlider = (() => {return {Init}})();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (imageSlider);\n\n//# sourceURL=webpack://portfolio/./src/imageSlider.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _loadImages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadImages */ \"./src/loadImages.js\");\n\n\n\n\n//# sourceURL=webpack://portfolio/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _loadImages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadImages */ \"./src/loadImages.js\");\n/* harmony import */ var _imageSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imageSlider */ \"./src/imageSlider.js\");\n\n\n\n_imageSlider__WEBPACK_IMPORTED_MODULE_2__[\"default\"].Init(document.querySelector('.slider-container'));\n\n\n//# sourceURL=webpack://portfolio/./src/index.js?");
 
 /***/ }),
 
@@ -126,7 +136,37 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_me_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/me.jpg */ \"./src/img/me.jpg\");\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadImages = (() => {\n  const myImg = document.querySelector('.my-photo');\n  myImg.src = _img_me_jpg__WEBPACK_IMPORTED_MODULE_0__;\n})());\n\n//# sourceURL=webpack://portfolio/./src/loadImages.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadImages: () => (/* binding */ loadImages)\n/* harmony export */ });\n/* harmony import */ var _img_me_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/me.jpg */ \"./src/img/me.jpg\");\n\n\nconst loadImages = (() => {\n  const myImg = document.querySelector('.my-photo');\n  myImg.src = _img_me_jpg__WEBPACK_IMPORTED_MODULE_0__;\n})();\n\n//# sourceURL=webpack://portfolio/./src/loadImages.js?");
+
+/***/ }),
+
+/***/ "./src/img/github.png":
+/*!****************************!*\
+  !*** ./src/img/github.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c67e6b312e2fd67c0a09.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/github.png?");
+
+/***/ }),
+
+/***/ "./src/img/javascript.png":
+/*!********************************!*\
+  !*** ./src/img/javascript.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3dfb665e058d08c99f28.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/javascript.png?");
+
+/***/ }),
+
+/***/ "./src/img/jest.png":
+/*!**************************!*\
+  !*** ./src/img/jest.png ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"be934370814d2071a113.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/jest.png?");
 
 /***/ }),
 
@@ -137,6 +177,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"ddbbcc2af808602be3f3.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/me.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/npm.png":
+/*!*************************!*\
+  !*** ./src/img/npm.png ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"061e65dec1a5ceee089a.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/npm.png?");
+
+/***/ }),
+
+/***/ "./src/img/webpack.png":
+/*!*****************************!*\
+  !*** ./src/img/webpack.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9f47349e804e3eb5fd96.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/webpack.png?");
 
 /***/ })
 
