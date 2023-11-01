@@ -36,7 +36,7 @@ header ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 30px;
+  gap: 10px;
 }
 
 button.theme-button {
@@ -48,7 +48,7 @@ button.theme-button {
 /* Main content */
 
 div.main-container {
-  max-width: 600px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
