@@ -14,11 +14,16 @@
   --main-secondary-color: #ffeded;
 }
 
+body {
+  background-color: var(--main-bg-color);
+}
+
 div.window-container {
   width: 100vw;
   min-height: 100vh;
   background-color: var(--main-bg-color);
   color: var(--main-txt-color);
+  transition: 0.6s;
 }
 
 /* Header */
@@ -36,6 +41,15 @@ header .header-container {
   margin-left: auto;
 }
 
+header a {
+  text-decoration: none;
+  color: (var(--main-txt-color));
+}
+
+header a:hover, header a:focus {
+  text-decoration: underline;
+}
+
 p.logo-name {
   font-weight: 650;
   font-size: 20px;
@@ -46,7 +60,7 @@ header ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 10px;
+  gap: 15px;
 }
 
 button.theme-button {
@@ -130,3 +144,34 @@ h3.stack-heading:after{
   top: 50%;
   right: 0;
 }
+
+.skills-container {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+button.more-skills {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 150px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  transition: transform 0.6s ease-in-out;
+}
+
+button.more-skills:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.skills-wrapper {
+  margin-top: 12px;
+  transition: all 0.6s ease-in-out;
+  transform-origin: top;
+}
+

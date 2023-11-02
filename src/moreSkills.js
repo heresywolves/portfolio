@@ -6,7 +6,7 @@ import githubImg from './img/github.png'
 
 function Init (doc) {
   const wrapper = document.createElement('div');
-  wrapper.classList.add('stack-wrapper');
+  wrapper.classList.add('skills-wrapper');
   wrapper.style.display = 'grid';
   
   const stackObj = { 
@@ -55,8 +55,9 @@ function Init (doc) {
   }
 
   doc.appendChild(wrapper);
-
+  wrapper.style.transform = 'scale(1, 0)';
+  wrapper.style.maxHeight = '0';
 }
 
-let techStack = (() => {return {Init}})();
-export default techStack;
+let moreSkills = (() => {return {Init}})();
+export default moreSkills;
