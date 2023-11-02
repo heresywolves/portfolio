@@ -70,3 +70,33 @@ img.my-photo {
   width: 120px;
   height: 120px;
 }
+
+/* Tech stack */
+h3.stack-heading {
+  position: relative;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h3.stack-heading:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background-color: #1a202c;
+  top: 50%;
+  left: 0;
+}
+
+h3.stack-heading:after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background-color: #1a202c;
+  top: 50%;
+  right: 0;
+}
