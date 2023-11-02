@@ -40,12 +40,15 @@ function Init (doc) {
   const stackLength = Object.keys(stackObj).length;
   wrapper.style.gridTemplateColumns = `repeat(${stackLength},1fr)`
   wrapper.style.gridTemplateRows = `auto auto`;
+  wrapper.style.rowGap = '12px';
 
   for (const key in stackObj) {
     const p = document.createElement('p');
     p.textContent = stackObj[key].name;
     p.style.gridRowStart = '2';
     p.style.textAlign = 'center';
+    p.style.fontWeight = '600';
+    p.style.fontSize = '12px';
     const imageSrc = stackObj[key].img;
     const img = document.createElement('img');
     img.style.alignSelf = 'center';

@@ -38,7 +38,7 @@ header .header-container {
 
 p.logo-name {
   font-weight: 650;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: normal;
 }
 
@@ -59,6 +59,7 @@ button.theme-button {
 
 div.main-container {
   max-width: 600px;
+  padding: 0px 15px 0px 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -77,6 +78,7 @@ div.name-card-container {
 }
 
 h1 {
+  font-size: 30px;
   font-weight: 650;
   margin-bottom: 12px;
 }
@@ -89,6 +91,7 @@ h2 {
 
 p {
   letter-spacing: 1px;
+  line-height: 1.5em;
 }
 
 img.my-photo {
