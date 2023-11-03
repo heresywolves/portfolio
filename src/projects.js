@@ -1,6 +1,7 @@
 import gitImg from './img/giticon.png'
 import dashboardPC from './img/dashboard-pc.png'
 import dashboardPhone from './img/dashboard-phone.png'
+import todoPC from './img/todo-pc.png'
 
 export let Projects = (() => {
   let container = document.querySelector('.projects-container');
@@ -11,9 +12,18 @@ export let Projects = (() => {
       pc: dashboardPC,
       phone: dashboardPhone,
       description: 'This dashboard serves as a responsive layout example that utilizes the strengths of grid and flexbox layouts.',
-      stack: 'Vanilla HTML, CSS, JavaScript',
+      stack: 'Vanilla JS, HTML, CSS',
       github: 'https://github.com/heresywolves/admin-dashboard',
       live: 'https://heresywolves.github.io/admin-dashboard/'
+    },
+    todo: {
+      name: 'ToDo App',
+      pc: todoPC,
+      phone: '',
+      description: 'Fully functioning app that lets you organize, create and check off completed tasks. Website uses browsers local storage.',
+      stack: 'Vanilla JS, HTML, CSS, Webpack',
+      github: 'https://github.com/heresywolves/todo-list',
+      live: 'https://heresywolves.github.io/todo-list/'
     }
   }
 
@@ -26,10 +36,12 @@ export let Projects = (() => {
       const pcImg = document.createElement('img');
       pcImg.classList.add('pc-image');
       pcImg.src = projectsObj[key].pc;
-
+      
       const phoneImg = document.createElement('img');
-      phoneImg.src = projectsObj[key].phone;
-      phoneImg.classList.add('phone-image');
+      if (projectsObj[key].phone !== ''){
+        phoneImg.src = projectsObj[key].phone;
+        phoneImg.classList.add('phone-image');
+      }
 
       const stack = document.createElement('p');
       stack.classList.add('project-stack');
@@ -56,7 +68,9 @@ export let Projects = (() => {
       gitButton.textContent = 'Github Source';
 
       wrapper.appendChild(pcImg);
-      wrapper.appendChild(phoneImg);
+      if (projectsObj[key].phone !== ''){
+        wrapper.appendChild(phoneImg);
+      }
       wrapper.appendChild(title);
       wrapper.appendChild(stack);
       wrapper.appendChild(description);
