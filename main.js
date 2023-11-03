@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n  box-sizing: border-box;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Raleway', sans-serif;\n  font-weight: 500;\n}\n\n:root {\n  --link-color: #4626c5;\n  --main-bg-color: #f0e7db;\n  --main-txt-color: #1a202c;\n  --main-secondary-color: #ffeded;\n}\n\nbody {\n  background-color: var(--main-bg-color);\n}\n\ndiv.window-container {\n  width: 100vw;\n  min-height: 100vh;\n  background-color: var(--main-bg-color);\n  color: var(--main-txt-color);\n  /* transition: 0.6s; */\n}\n\n/* Header */\nheader {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n}\n\nheader .header-container {\n  max-width: 600px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-right: auto;\n  margin-left: auto;\n}\n\nheader a {\n  text-decoration: none;\n  color: var(--link-color);\n}\n\nheader a:hover, header a:focus {\n  text-decoration: underline;\n}\n\np.logo-name {\n  font-weight: 650;\n  font-size: 20px;\n  letter-spacing: normal;\n}\n\nheader ul {\n  display: flex;\n  justify-content: space-between;\n  list-style: none;\n  gap: 15px;\n}\n\nbutton.theme-button {\n  cursor: pointer;\n  width: 30px;\n  height: 20px;\n}\n\n/* Main content */\n\ndiv.main-container {\n  max-width: 600px;\n  padding: 0px 15px 0px 15px;\n  margin-left: auto;\n  margin-right: auto;\n  display: flex;\n  flex-direction: column;\n}\n\ndiv.greeting {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n  margin-top: 30px;\n  margin-bottom: 30px;\n  text-align: center;\n}\n\ndiv.name-card-container {\n  display: flex;\n  justify-content: space-between;\n}\n\nh1 {\n  font-size: 30px;\n  font-weight: 650;\n  margin-bottom: 12px;\n}\n\nh2 {\n  font-weight: 650;\n  margin-top: 12px;\n  margin-bottom: 12px;\n}\n\np {\n  letter-spacing: 1px;\n  line-height: 1.5em;\n}\n\nimg.my-photo {\n  border-radius: 50%;\n  border: solid 2px var(--main-secondary-color);\n  width: 120px;\n  height: 120px;\n}\n\n/* Tech stack */\nh3.stack-heading {\n  position: relative;\n  max-width: 300px;\n  margin: 20px auto;\n  text-align: center;\n}\n\nh3.stack-heading:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  height: 2px;\n  width: 100px;\n  background-color: #1a202c;\n  top: 50%;\n  left: 0;\n}\n\nh3.stack-heading:after{\n  content: \"\";\n  display: block;\n  position: absolute;\n  height: 2px;\n  width: 100px;\n  background-color: #1a202c;\n  top: 50%;\n  right: 0;\n}\n\n.skills-container {\n  position: relative;\n  margin-bottom: 12px;\n}\n\nbutton.more-skills {\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 12px;\n  border: none;\n  background-color: transparent;\n  padding: 5px;\n  color: var(--link-color);\n}\n\nbutton.more-skills:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.skills-wrapper {\n  margin-top: 12px;\n  transition: all 0.6s ease-in-out;\n  transform-origin: top;\n}\n\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://portfolio/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n  box-sizing: border-box;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Raleway', sans-serif;\n  font-weight: 500;\n}\n\n:root {\n  --link-color: #4626c5;\n  --main-bg-color: #f0e7db;\n  --main-txt-color: #1a202c;\n  --main-secondary-color: #ffeded;\n}\n\nbody {\n  background-color: var(--main-bg-color);\n}\n\ndiv.window-container {\n  width: 100vw;\n  min-height: 100vh;\n  background-color: var(--main-bg-color);\n  color: var(--main-txt-color);\n  /* transition: 0.6s; */\n}\n\n/* Header */\nheader {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n}\n\nheader .header-container {\n  max-width: 600px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-right: auto;\n  margin-left: auto;\n}\n\nheader a {\n  text-decoration: none;\n  color: var(--link-color);\n}\n\nheader a:hover, header a:focus {\n  text-decoration: underline;\n}\n\np.logo-name {\n  font-weight: 650;\n  font-size: 20px;\n  letter-spacing: normal;\n}\n\nheader ul {\n  display: flex;\n  justify-content: space-between;\n  list-style: none;\n  gap: 15px;\n}\n\nbutton.theme-button {\n  cursor: pointer;\n  width: 30px;\n  height: 20px;\n}\n\n/* Main content */\n\ndiv.main-container {\n  max-width: 600px;\n  padding: 0px 15px 0px 15px;\n  margin-left: auto;\n  margin-right: auto;\n  display: flex;\n  flex-direction: column;\n}\n\ndiv.greeting {\n  background-color: var(--main-secondary-color);\n  padding: 10px;\n  margin-top: 30px;\n  margin-bottom: 30px;\n  text-align: center;\n}\n\ndiv.name-card-container {\n  display: flex;\n  justify-content: space-between;\n}\n\nh1 {\n  font-size: 30px;\n  font-weight: 650;\n  margin-bottom: 12px;\n}\n\nh2 {\n  font-weight: 650;\n  margin-top: 12px;\n  margin-bottom: 12px;\n}\n\np {\n  letter-spacing: 1px;\n  line-height: 1.5em;\n}\n\nimg.my-photo {\n  border-radius: 50%;\n  border: solid 2px var(--main-secondary-color);\n  width: 120px;\n  height: 120px;\n}\n\n/* Tech stack */\nh3.stack-heading {\n  position: relative;\n  max-width: 300px;\n  margin: 20px auto;\n  text-align: center;\n}\n\nh3.stack-heading:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  height: 2px;\n  width: 100px;\n  background-color: #1a202c;\n  top: 50%;\n  left: 0;\n}\n\nh3.stack-heading:after{\n  content: \"\";\n  display: block;\n  position: absolute;\n  height: 2px;\n  width: 100px;\n  background-color: #1a202c;\n  top: 50%;\n  right: 0;\n}\n\n.skills-container {\n  position: relative;\n  margin-bottom: 12px;\n}\n\nbutton.more-skills {\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 12px;\n  border: none;\n  background-color: transparent;\n  padding: 5px;\n  color: var(--link-color);\n}\n\nbutton.more-skills:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.skills-wrapper {\n  margin-top: 24px;\n  transition: all 0.6s ease-in-out;\n  transform-origin: top;\n}\n\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://portfolio/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/webpack.png */ \"./src/img/webpack.png\");\n/* harmony import */ var _img_npm_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/npm.png */ \"./src/img/npm.png\");\n/* harmony import */ var _img_jest_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/jest.png */ \"./src/img/jest.png\");\n/* harmony import */ var _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/javascript.png */ \"./src/img/javascript.png\");\n/* harmony import */ var _img_github_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/github.png */ \"./src/img/github.png\");\n\n\n\n\n\n\nfunction Init (doc) {\n  const wrapper = document.createElement('div');\n  wrapper.classList.add('skills-wrapper');\n  wrapper.style.display = 'grid';\n  \n  const stackObj = { \n    Linux: {\n      img: _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__,\n      name: 'Linux'\n    },\n    npm: {\n      img: _img_npm_png__WEBPACK_IMPORTED_MODULE_1__,\n      name: 'Node Package Manager'\n    },\n    jest: {\n      img: _img_jest_png__WEBPACK_IMPORTED_MODULE_2__,\n      name: 'Jest'\n    },\n    javascript: {\n      img: _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__,\n      name: 'JavaScript'\n    },\n    git: {\n      img: _img_github_png__WEBPACK_IMPORTED_MODULE_4__,\n      name: 'Git'\n    }\n  }  \n  \n  const stackLength = Object.keys(stackObj).length;\n  wrapper.style.gridTemplateColumns = `repeat(${stackLength},1fr)`\n  wrapper.style.gridTemplateRows = `auto auto`;\n  wrapper.style.rowGap = '12px';\n\n  for (const key in stackObj) {\n    const p = document.createElement('p');\n    p.textContent = stackObj[key].name;\n    p.style.gridRowStart = '2';\n    p.style.textAlign = 'center';\n    p.style.fontWeight = '600';\n    p.style.fontSize = '12px';\n    const imageSrc = stackObj[key].img;\n    const img = document.createElement('img');\n    img.style.alignSelf = 'center';\n    img.style.justifySelf = 'center';\n    img.src = imageSrc;\n    img.style.width = '50px';\n    wrapper.appendChild(img);\n    wrapper.appendChild(p);\n  }\n\n  doc.appendChild(wrapper);\n  wrapper.style.transform = 'scale(1, 0)';\n  wrapper.style.maxHeight = '0';\n}\n\nlet moreSkills = (() => {return {Init}})();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (moreSkills);\n\n//# sourceURL=webpack://portfolio/./src/moreSkills.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_linux_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/linux.png */ \"./src/img/linux.png\");\n/* harmony import */ var _img_blender_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/blender.png */ \"./src/img/blender.png\");\n/* harmony import */ var _img_python_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/python.png */ \"./src/img/python.png\");\n/* harmony import */ var _img_cplus_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/cplus.png */ \"./src/img/cplus.png\");\n/* harmony import */ var _img_illustrator_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/illustrator.png */ \"./src/img/illustrator.png\");\n/* harmony import */ var _img_photoshop_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/photoshop.png */ \"./src/img/photoshop.png\");\n/* harmony import */ var _img_figma_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/figma.png */ \"./src/img/figma.png\");\n\n\n\n\n\n\n\n\nfunction Init (doc) {\n  const wrapper = document.createElement('div');\n  wrapper.classList.add('skills-wrapper');\n  wrapper.style.display = 'grid';\n  \n  const stackObj = { \n    linux: {\n      img: _img_linux_png__WEBPACK_IMPORTED_MODULE_0__,\n      name: 'Linux'\n    },\n    blender: {\n      img: _img_blender_png__WEBPACK_IMPORTED_MODULE_1__,\n      name: 'Blender 3D'\n    },\n    cplus: {\n      img: _img_cplus_png__WEBPACK_IMPORTED_MODULE_3__,\n      name: 'C++'\n    },\n    python: {\n      img: _img_python_png__WEBPACK_IMPORTED_MODULE_2__,\n      name: 'Python'\n    },\n    illustrator: {\n      img: _img_illustrator_png__WEBPACK_IMPORTED_MODULE_4__,\n      name: 'Adobe Illustrator'\n    },\n    photoshop: {\n      img: _img_photoshop_png__WEBPACK_IMPORTED_MODULE_5__,\n      name: 'Adobe Photoshop'\n    },\n    figma: {\n      img: _img_figma_png__WEBPACK_IMPORTED_MODULE_6__,\n      name: 'Figma'\n    }\n  }  \n  \n  const stackLength = Object.keys(stackObj).length;\n  wrapper.style.gridTemplateColumns = `repeat(${stackLength},1fr)`\n  wrapper.style.gridTemplateRows = `auto auto`;\n  wrapper.style.rowGap = '12px';\n\n  for (const key in stackObj) {\n    const p = document.createElement('p');\n    p.textContent = stackObj[key].name;\n    p.style.gridRowStart = '2';\n    p.style.textAlign = 'center';\n    p.style.fontWeight = '600';\n    p.style.fontSize = '12px';\n    const imageSrc = stackObj[key].img;\n    const img = document.createElement('img');\n    img.style.alignSelf = 'center';\n    img.style.justifySelf = 'center';\n    img.src = imageSrc;\n    img.style.width = '50px';\n    wrapper.appendChild(img);\n    wrapper.appendChild(p);\n  }\n\n  doc.appendChild(wrapper);\n  wrapper.style.transform = 'scale(1, 0)';\n  wrapper.style.maxHeight = '0';\n}\n\nlet moreSkills = (() => {return {Init}})();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (moreSkills);\n\n//# sourceURL=webpack://portfolio/./src/moreSkills.js?");
 
 /***/ }),
 
@@ -150,6 +150,36 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/img/blender.png":
+/*!*****************************!*\
+  !*** ./src/img/blender.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ebde7299b21cf103c176.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/blender.png?");
+
+/***/ }),
+
+/***/ "./src/img/cplus.png":
+/*!***************************!*\
+  !*** ./src/img/cplus.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"053a898d752aef72651e.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/cplus.png?");
+
+/***/ }),
+
+/***/ "./src/img/figma.png":
+/*!***************************!*\
+  !*** ./src/img/figma.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"46400ab8543f71a3650b.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/figma.png?");
+
+/***/ }),
+
 /***/ "./src/img/github.png":
 /*!****************************!*\
   !*** ./src/img/github.png ***!
@@ -157,6 +187,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"c67e6b312e2fd67c0a09.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/github.png?");
+
+/***/ }),
+
+/***/ "./src/img/illustrator.png":
+/*!*********************************!*\
+  !*** ./src/img/illustrator.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f4d95cb0ced36834540c.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/illustrator.png?");
 
 /***/ }),
 
@@ -180,6 +220,16 @@ eval("module.exports = __webpack_require__.p + \"be934370814d2071a113.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/img/linux.png":
+/*!***************************!*\
+  !*** ./src/img/linux.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"2471a7083a54eca9f12a.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/linux.png?");
+
+/***/ }),
+
 /***/ "./src/img/me.jpg":
 /*!************************!*\
   !*** ./src/img/me.jpg ***!
@@ -197,6 +247,26 @@ eval("module.exports = __webpack_require__.p + \"ddbbcc2af808602be3f3.jpg\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"061e65dec1a5ceee089a.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/npm.png?");
+
+/***/ }),
+
+/***/ "./src/img/photoshop.png":
+/*!*******************************!*\
+  !*** ./src/img/photoshop.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f2ecaa8a0acdd48052cb.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/photoshop.png?");
+
+/***/ }),
+
+/***/ "./src/img/python.png":
+/*!****************************!*\
+  !*** ./src/img/python.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"475c5ac4b8ffc147b24c.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/python.png?");
 
 /***/ }),
 
