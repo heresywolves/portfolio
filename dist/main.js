@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Projects: () => (/* binding */ Projects)\n/* harmony export */ });\n/* harmony import */ var _img_giticon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/giticon.png */ \"./src/img/giticon.png\");\n/* harmony import */ var _img_dashboard_pc_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/dashboard-pc.png */ \"./src/img/dashboard-pc.png\");\n/* harmony import */ var _img_dashboard_phone_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/dashboard-phone.png */ \"./src/img/dashboard-phone.png\");\n/* harmony import */ var _img_todo_pc_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/todo-pc.png */ \"./src/img/todo-pc.png\");\n\n\n\n\n\nlet Projects = (() => {\n  let container = document.querySelector('.projects-container');\n  \n  let projectsObj = {\n    dashboard: {\n      name: 'Admin Dashboard',\n      pc: _img_dashboard_pc_png__WEBPACK_IMPORTED_MODULE_1__,\n      phone: _img_dashboard_phone_png__WEBPACK_IMPORTED_MODULE_2__,\n      description: 'This dashboard serves as a responsive layout example that utilizes the strengths of grid and flexbox layouts.',\n      stack: 'Vanilla JS, HTML, CSS',\n      github: 'https://github.com/heresywolves/admin-dashboard',\n      live: 'https://heresywolves.github.io/admin-dashboard/'\n    },\n    todo: {\n      name: 'ToDo App',\n      pc: _img_todo_pc_png__WEBPACK_IMPORTED_MODULE_3__,\n      phone: '',\n      description: 'Fully functioning app that lets you organize, create and check off completed tasks. Website uses browsers local storage.',\n      stack: 'Vanilla JS, HTML, CSS, Webpack',\n      github: 'https://github.com/heresywolves/todo-list',\n      live: 'https://heresywolves.github.io/todo-list/'\n    }\n  }\n\n  function load() {\n\n    for (const key in projectsObj) {\n      const wrapper = document.createElement('div');\n      wrapper.classList.add('project-wrapper');\n\n      const pcImg = document.createElement('img');\n      pcImg.classList.add('pc-image');\n      pcImg.src = projectsObj[key].pc;\n      \n      const phoneImg = document.createElement('img');\n      if (projectsObj[key].phone !== ''){\n        phoneImg.src = projectsObj[key].phone;\n        phoneImg.classList.add('phone-image');\n      }\n\n      const stack = document.createElement('p');\n      stack.classList.add('project-stack');\n      stack.textContent = projectsObj[key].stack;\n\n      const title = document.createElement('a');\n      title.classList.add('project-title');\n      title.href = projectsObj[key].live;\n      title.textContent = projectsObj[key].name;\n      title.target = '_blank';\n\n      const description = document.createElement('p');\n      description.classList.add('project-description');\n      description.textContent = projectsObj[key].description;\n\n      const gitButton = document.createElement('a');\n      gitButton.classList.add('project-github-link');\n      gitButton.href = projectsObj[key].github;\n      gitButton.target = '_blank';\n      const gitIcon = document.createElement('img');\n      gitIcon.classList.add('project-github-icon');\n      gitIcon.src = _img_giticon_png__WEBPACK_IMPORTED_MODULE_0__;\n      gitIcon.style.width = '15px';\n      gitButton.textContent = 'Github Source';\n\n      wrapper.appendChild(pcImg);\n      if (projectsObj[key].phone !== ''){\n        wrapper.appendChild(phoneImg);\n      }\n      wrapper.appendChild(title);\n      wrapper.appendChild(stack);\n      wrapper.appendChild(description);\n      wrapper.appendChild(gitButton);\n      wrapper.appendChild(gitIcon);\n      container.appendChild(wrapper);\n\n    }\n\n  }\n\n  return {load}\n})();\n\n//# sourceURL=webpack://portfolio/./src/projects.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Projects: () => (/* binding */ Projects)\n/* harmony export */ });\n/* harmony import */ var _img_giticon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/giticon.png */ \"./src/img/giticon.png\");\n/* harmony import */ var _img_dashboard_pc_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/dashboard-pc.png */ \"./src/img/dashboard-pc.png\");\n/* harmony import */ var _img_dashboard_phone_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/dashboard-phone.png */ \"./src/img/dashboard-phone.png\");\n/* harmony import */ var _img_todo_pc_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/todo-pc.png */ \"./src/img/todo-pc.png\");\n/* harmony import */ var _img_weather_pc_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/weather-pc.png */ \"./src/img/weather-pc.png\");\n/* harmony import */ var _img_form_pc_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/form-pc.png */ \"./src/img/form-pc.png\");\n/* harmony import */ var _img_form_phone_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/form-phone.png */ \"./src/img/form-phone.png\");\n/* harmony import */ var _img_library_pc_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/library-pc.png */ \"./src/img/library-pc.png\");\n/* harmony import */ var _img_restaurant_pc_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/restaurant-pc.png */ \"./src/img/restaurant-pc.png\");\n\n\n\n\n\n\n\n\n\n\nlet Projects = (() => {\n  let container = document.querySelector('.projects-container');\n  \n  let projectsObj = {\n    dashboard: {\n      name: 'Admin Dashboard',\n      pc: _img_dashboard_pc_png__WEBPACK_IMPORTED_MODULE_1__,\n      phone: _img_dashboard_phone_png__WEBPACK_IMPORTED_MODULE_2__,\n      description: 'This dashboard serves as a responsive layout example that utilizes the strengths of grid and flexbox layouts.',\n      stack: 'Vanilla JS, HTML, CSS',\n      github: 'https://github.com/heresywolves/admin-dashboard',\n      live: 'https://heresywolves.github.io/admin-dashboard/'\n    },\n    todo: {\n      name: 'ToDo App',\n      pc: _img_todo_pc_png__WEBPACK_IMPORTED_MODULE_3__,\n      phone: '',\n      description: 'Fully functioning app that lets you organize, create and check off completed tasks. Website uses browsers local storage.',\n      stack: 'Vanilla JS, HTML, CSS, Webpack',\n      github: 'https://github.com/heresywolves/todo-list',\n      live: 'https://heresywolves.github.io/todo-list/'\n    },\n    weather: {\n      name: 'Weather App',\n      pc: _img_weather_pc_png__WEBPACK_IMPORTED_MODULE_4__,\n      phone: '',\n      description: \"This app works with external API's for fresh weather data, easy on-demand search suggestions and pictures based on the weather.\",\n      stack: 'Vanilla JS, HTML, CSS, Webpack',\n      github: 'https://github.com/heresywolves/weather-app',\n      live: 'https://heresywolves.github.io/weather-app/'\n    },\n    form: {\n      name: 'Online Form',\n      pc: _img_form_pc_png__WEBPACK_IMPORTED_MODULE_5__,\n      phone: _img_form_phone_png__WEBPACK_IMPORTED_MODULE_6__,\n      description: \"Responsive fill-out form that utilises JavaScript for client-side validation.\",\n      stack: 'Vanilla JS, HTML, CSS',\n      github: 'https://github.com/heresywolves/online-form',\n      live: 'https://heresywolves.github.io/online-form/'\n    },\n    restaurant: {\n      name: 'Restaurant Menu',\n      pc: _img_restaurant_pc_png__WEBPACK_IMPORTED_MODULE_8__,\n      phone: '',\n      description: \"A simple, clean restaurant homepage design that generates page content dynamically throughout tabs.\",\n      stack: 'Vanilla JS, HTML, CSS, Webpack',\n      github: 'https://github.com/heresywolves/restaurant-menu',\n      live: 'https://heresywolves.github.io/restaurant-menu/'\n    },\n    library: {\n      name: 'Library App',\n      pc: _img_library_pc_png__WEBPACK_IMPORTED_MODULE_7__,\n      phone: '',\n      description: \"Personal online library application that can keep track of saved books by different markings and display statistics\",\n      stack: 'Vanilla JS, HTML, CSS, Webpack',\n      github: 'https://github.com/heresywolves/library-app',\n      live: 'https://heresywolves.github.io/library-app/'\n    }\n  }\n\n  function load() {\n\n    for (const key in projectsObj) {\n      const wrapper = document.createElement('div');\n      wrapper.classList.add('project-wrapper');\n\n      const pcImg = document.createElement('img');\n      pcImg.classList.add('pc-image');\n      pcImg.src = projectsObj[key].pc;\n      \n      const phoneImg = document.createElement('img');\n      if (projectsObj[key].phone !== ''){\n        phoneImg.src = projectsObj[key].phone;\n        phoneImg.classList.add('phone-image');\n      }\n\n      const stack = document.createElement('p');\n      stack.classList.add('project-stack');\n      stack.textContent = projectsObj[key].stack;\n\n      const title = document.createElement('a');\n      title.classList.add('project-title');\n      title.href = projectsObj[key].live;\n      title.textContent = projectsObj[key].name;\n      title.target = '_blank';\n\n      const description = document.createElement('p');\n      description.classList.add('project-description');\n      description.textContent = projectsObj[key].description;\n\n      const gitButton = document.createElement('a');\n      gitButton.classList.add('project-github-link');\n      gitButton.href = projectsObj[key].github;\n      gitButton.target = '_blank';\n      const gitIcon = document.createElement('img');\n      gitIcon.classList.add('project-github-icon');\n      gitIcon.src = _img_giticon_png__WEBPACK_IMPORTED_MODULE_0__;\n      gitIcon.style.width = '15px';\n      gitButton.textContent = 'Github Source';\n\n      wrapper.appendChild(pcImg);\n      if (projectsObj[key].phone !== ''){\n        wrapper.appendChild(phoneImg);\n      }\n      wrapper.appendChild(title);\n      wrapper.appendChild(stack);\n      wrapper.appendChild(description);\n      wrapper.appendChild(gitButton);\n      wrapper.appendChild(gitIcon);\n      container.appendChild(wrapper);\n\n    }\n\n  }\n\n  return {load}\n})();\n\n//# sourceURL=webpack://portfolio/./src/projects.js?");
 
 /***/ }),
 
@@ -210,6 +210,26 @@ eval("module.exports = __webpack_require__.p + \"46400ab8543f71a3650b.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/img/form-pc.png":
+/*!*****************************!*\
+  !*** ./src/img/form-pc.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"cf916da458029452978a.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/form-pc.png?");
+
+/***/ }),
+
+/***/ "./src/img/form-phone.png":
+/*!********************************!*\
+  !*** ./src/img/form-phone.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"7df15ce24ebec09ef20c.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/form-phone.png?");
+
+/***/ }),
+
 /***/ "./src/img/github.png":
 /*!****************************!*\
   !*** ./src/img/github.png ***!
@@ -257,6 +277,16 @@ eval("module.exports = __webpack_require__.p + \"3dfb665e058d08c99f28.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"be934370814d2071a113.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/jest.png?");
+
+/***/ }),
+
+/***/ "./src/img/library-pc.png":
+/*!********************************!*\
+  !*** ./src/img/library-pc.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ef0e8e364c157706e9b4.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/library-pc.png?");
 
 /***/ }),
 
@@ -310,6 +340,16 @@ eval("module.exports = __webpack_require__.p + \"475c5ac4b8ffc147b24c.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/img/restaurant-pc.png":
+/*!***********************************!*\
+  !*** ./src/img/restaurant-pc.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"227aa4bfbfea726aa318.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/restaurant-pc.png?");
+
+/***/ }),
+
 /***/ "./src/img/todo-pc.png":
 /*!*****************************!*\
   !*** ./src/img/todo-pc.png ***!
@@ -317,6 +357,16 @@ eval("module.exports = __webpack_require__.p + \"475c5ac4b8ffc147b24c.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"78fbacabb4597387d259.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/todo-pc.png?");
+
+/***/ }),
+
+/***/ "./src/img/weather-pc.png":
+/*!********************************!*\
+  !*** ./src/img/weather-pc.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"a95a39144d4d523cbba1.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/weather-pc.png?");
 
 /***/ }),
 
