@@ -16,11 +16,9 @@ function showSkills() {
   skillsButton.removeEventListener('click', showSkills);
   skillsButton.textContent = 'See less';
   skillsButton.addEventListener('click', showLess);
-  skillsButton.style.transform = 'translate(0px, 120px)'
 }
 
 function showLess() {
-  skillsButton.style.transform = 'translate(0, 0)';
   skills.style.maxHeight = '0';
   skills.style.transform = 'scale(1, 0)';
   skillsButton.textContent = 'See more skills';

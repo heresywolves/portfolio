@@ -10,9 +10,9 @@ function Init (doc) {
   wrapper.style.display = 'grid';
   
   const stackObj = { 
-    webpack: {
+    Linux: {
       img: webpackImg,
-      name: 'Webpack'
+      name: 'Linux'
     },
     npm: {
       img: npmImg,
