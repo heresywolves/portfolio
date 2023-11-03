@@ -39,6 +39,7 @@ export let Projects = (() => {
       title.classList.add('project-title');
       title.href = projectsObj[key].live;
       title.textContent = projectsObj[key].name;
+      title.target = '_blank';
 
       const description = document.createElement('p');
       description.classList.add('project-description');
@@ -47,6 +48,7 @@ export let Projects = (() => {
       const gitButton = document.createElement('a');
       gitButton.classList.add('project-github-link');
       gitButton.href = projectsObj[key].github;
+      gitButton.target = '_blank';
       const gitIcon = document.createElement('img');
       gitIcon.classList.add('project-github-icon');
       gitIcon.src = gitImg;
