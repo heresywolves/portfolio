@@ -2,6 +2,7 @@ import './style.css'
 import './loadImages'
 import techStack from './techStack'
 import moreSkills from './moreSkills';
+import { Projects } from './projects';
 
 techStack.Init(document.querySelector('.stack-container'));
 moreSkills.Init(document.querySelector('.stack-container'));
@@ -25,3 +26,5 @@ function showLess() {
   skillsButton.removeEventListener('click', showLess);
   skillsButton.addEventListener('click', showSkills);
 }
+
+Projects.load();

@@ -150,7 +150,6 @@ h3.stack-heading:after{
 
 .skills-container {
   position: relative;
-  margin-bottom: 12px;
 }
 
 button.more-skills {
@@ -174,3 +173,81 @@ button.more-skills:hover {
   transform-origin: top;
 }
 
+
+/* Projects */
+
+.project-wrapper {
+  margin: 24px 0px 24px 0px;
+  display: grid;
+  grid-template-columns: auto 50px 1fr;
+  grid-template-rows: auto auto 1fr 20px;
+  column-gap: 12px;
+}
+
+.projects-container .pc-image {
+  width: 300px;
+  grid-row: 1 / 5;
+  align-self: end;
+}
+
+.projects-container .phone-image {
+  width: 80px;
+  grid-row: 1 / 5;
+  position: relative;
+  right: 40px;
+  align-self: end;
+}
+
+.project-title {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 22px;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+.project-stack {
+  font-size: 12px;
+  grid-column: 3;
+  grid-row: 2;
+  margin-top: 6px;
+}
+
+.project-description {
+  margin-top: 18px;
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.project-github-link{
+  font-size: 12px;
+  text-align: end;
+  text-decoration: none;
+  grid-column: 3;
+  grid-row: 4;
+  width: 120px;
+  justify-self: end;
+  align-self: center;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--link-color);
+  border: none;
+}
+
+.project-github-link:hover {
+  text-decoration: underline;
+}
+
+.project-github-icon {
+  align-self: center;
+  grid-column: 3;
+  grid-row: 4;
+  justify-self: end;
+  margin-right: 84px;
+  position: relative;
+  bottom: 2px;
+}
