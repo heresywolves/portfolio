@@ -1,8 +1,10 @@
-import webpackImg from './img/webpack.png'
-import npmImg from './img/npm.png'
-import jestImg from './img/jest.png'
-import javascriptImg from './img/javascript.png'
-import githubImg from './img/github.png'
+import linuxImg from './img/linux.png'
+import blenderImg from './img/blender.png'
+import pythonImg from './img/python.png'
+import cplusImg from './img/cplus.png'
+import illustratorImg from './img/illustrator.png'
+import photoshopImg from './img/photoshop.png'
+import figmaImg from './img/figma.png'
 
 function Init (doc) {
   const wrapper = document.createElement('div');
@@ -10,25 +12,33 @@ function Init (doc) {
   wrapper.style.display = 'grid';
   
   const stackObj = { 
-    Linux: {
-      img: webpackImg,
+    linux: {
+      img: linuxImg,
       name: 'Linux'
     },
-    npm: {
-      img: npmImg,
-      name: 'Node Package Manager'
+    blender: {
+      img: blenderImg,
+      name: 'Blender 3D'
     },
-    jest: {
-      img: jestImg,
-      name: 'Jest'
+    cplus: {
+      img: cplusImg,
+      name: 'C++'
     },
-    javascript: {
-      img: javascriptImg,
-      name: 'JavaScript'
+    python: {
+      img: pythonImg,
+      name: 'Python'
     },
-    git: {
-      img: githubImg,
-      name: 'Git'
+    illustrator: {
+      img: illustratorImg,
+      name: 'Adobe Illustrator'
+    },
+    photoshop: {
+      img: photoshopImg,
+      name: 'Adobe Photoshop'
+    },
+    figma: {
+      img: figmaImg,
+      name: 'Figma'
     }
   }  
   
