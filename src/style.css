@@ -12,7 +12,8 @@
   --link-color: #4626c5;
   --main-bg-color: #f0e7db;
   --main-txt-color: #1a202c;
-  --main-secondary-color: #ffeded;
+  /* --main-secondary-color: #ffeded; */
+  --main-secondary-color:#f5f0e8;
 }
 
 body {
@@ -256,4 +257,11 @@ button.more-skills:hover {
   margin-right: 84px;
   position: relative;
   bottom: 2px;
+}
+
+
+/* Three js */
+
+.three-js {
+  height: 500px;
 }
