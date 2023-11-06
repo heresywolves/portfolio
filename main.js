@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadImages: () => (/* binding */ loadImages)\n/* harmony export */ });\n/* harmony import */ var _img_me_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/me.jpg */ \"./src/img/me.jpg\");\n\n\nconst loadImages = (() => {\n  const myImg = document.querySelector('.my-photo');\n  myImg.src = _img_me_jpg__WEBPACK_IMPORTED_MODULE_0__;\n})();\n\n//# sourceURL=webpack://portfolio/./src/loadImages.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadImages: () => (/* binding */ loadImages)\n/* harmony export */ });\n/* harmony import */ var _img_me_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/me.jpg */ \"./src/img/me.jpg\");\n/* harmony import */ var _img_me2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/me2.png */ \"./src/img/me2.png\");\n\n\n\nconst loadImages = (() => {\n  const myImg = document.querySelector('.my-photo');\n  myImg.src = _img_me2_png__WEBPACK_IMPORTED_MODULE_1__;\n})();\n\n//# sourceURL=webpack://portfolio/./src/loadImages.js?");
 
 /***/ }),
 
@@ -317,6 +317,16 @@ eval("module.exports = __webpack_require__.p + \"2471a7083a54eca9f12a.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"ddbbcc2af808602be3f3.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/me.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/me2.png":
+/*!*************************!*\
+  !*** ./src/img/me2.png ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"49840be569614a1c16f7.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/me2.png?");
 
 /***/ }),
 
