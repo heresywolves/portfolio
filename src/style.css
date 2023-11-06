@@ -12,8 +12,8 @@
   --link-color: #4626c5;
   --main-bg-color: #f0e7db;
   --main-txt-color: #1a202c;
-  /* --main-secondary-color: #ffeded; */
-  --main-secondary-color:#f5f0e8;
+  /* --main-secondary-color:#f5f0e8; */
+  --main-secondary-color: rgba(255,255,255,0.5);
 }
 
 body {
@@ -31,7 +31,12 @@ div.window-container {
 /* Header */
 header {
   background-color: var(--main-secondary-color);
+  backdrop-filter: blur(8px);
+  z-index: 5;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 header .header-container {
@@ -268,5 +273,5 @@ button.more-skills:hover {
 }
 
 .three-js canvas {
-  margin: 0px auto -60px auto;
+  margin: -20px auto -60px auto;
 }
