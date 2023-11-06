@@ -39,10 +39,10 @@ function init() {
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color('#f0e7db');
-  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+  const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
   const renderer = new THREE.WebGLRenderer();
-  renderer.setSize( window.innerWidth, window.innerHeight);
+  renderer.setSize( window.innerWidth/2, window.innerHeight/2);
   let dom = document.querySelector('.three-js');
   dom.appendChild( renderer.domElement );
 
@@ -64,22 +64,29 @@ function init() {
     }
   )
 
+  //Controls
+  const controls = new OrbitControls( camera, renderer.domElement );
 
   //light 
-  const light = new THREE.AmbientLight( 0x404040, 70); // soft white light
+  const light = new THREE.AmbientLight( 0x404040, 180); // soft white light
   scene.add( light );
 
-
+  
+  controls.autoRotate = true;
+  // controls.autoRotateSpeed = 8;
+  controls.enablePan = false;
   camera.position.z = 0.5;
+
 
   function animate() {
 
 
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
+    controls.update();
     if (model) {
-      model.rotation.x += 0.02;
-      model.rotation.y += 0.02;
+      model.rotation.x += 0.01;
+      // model.rotation.y += 0.01;
     }
   }
   animate();
