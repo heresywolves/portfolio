@@ -264,6 +264,11 @@ button.more-skills:hover {
   bottom: 2px;
 }
 
+/* Other projects */
+ul.other-projects li{
+  margin: 10px 0;
+}
+
 
 /* Three js */
 
@@ -275,3 +280,4 @@ button.more-skills:hover {
 .three-js canvas {
   margin: -20px auto -60px auto;
 }
+
