@@ -21,7 +21,6 @@ body {
 }
 
 div.window-container {
-  width: 100vw;
   min-height: 100vh;
   background-color: var(--main-bg-color);
   color: var(--main-txt-color);
@@ -279,5 +278,17 @@ ul.other-projects li{
 
 .three-js canvas {
   margin: -20px auto -60px auto;
+}
+
+/* Hobbies */
+
+.hobbies-header {
+  margin-top: 36px;
+}
+
+/* Edit this */
+.hobbies li {
+  margin: 10px 0;
+  color: blue;
 }
 
