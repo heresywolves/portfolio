@@ -42,6 +42,9 @@ div.window-container a, div.window-container a:visited {
   text-decoration: none;
   color: var(--link-color);
 }
+div.window-container a:hover, div.window-container a:visited:hover {
+  text-decoration: underline;
+}
 
 div.window-container.dark {
   background-color: var(--dark-bg-color);
