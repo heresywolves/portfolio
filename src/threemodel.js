@@ -4,11 +4,11 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 export let threemodel = (() => {
 
-// Three js
-function init() {
-
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color('#f0e7db');
+// Three js
+function init(color) {
+
+  scene.background = new THREE.Color(color);
   const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
   const renderer = new THREE.WebGLRenderer();
@@ -62,5 +62,9 @@ function init() {
   animate();
   }
 
-  return {init}
+  function changeColor(color){
+    scene.background = new THREE.Color(color);
+  }
+
+  return {init, changeColor}
 })();
