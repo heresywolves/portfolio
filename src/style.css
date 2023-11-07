@@ -207,7 +207,7 @@ img.my-photo {
 h3.stack-heading {
   position: relative;
   max-width: 300px;
-  margin: 20px auto;
+  margin: 34px auto 20px auto;
   text-align: center;
 }
 
@@ -248,7 +248,7 @@ h3.stack-heading.dark:after {
 button.more-skills {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   border: none;
   background-color: transparent;
   padding: 5px;
@@ -358,6 +358,14 @@ button.more-skills:hover {
   grid-column: 3;
   grid-row: 2;
   margin-top: 6px;
+}
+
+.stack-wrapper, .skills-wrapper {
+  margin-bottom: 24px;
+}
+
+.stack-wrapper.second {
+  padding: 0px 110px;
 }
 
 .project-description {

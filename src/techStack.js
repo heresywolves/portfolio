@@ -3,11 +3,11 @@ import npmImg from './img/npm.png'
 import jestImg from './img/jest.png'
 import javascriptImg from './img/javascript.png'
 import githubImg from './img/github.png'
+import nodeImg from './img/node.png'
+import threeImg from './img/three.png'
+import babelImg from './img/babel.png'
 
 function Init (doc) {
-  const wrapper = document.createElement('div');
-  wrapper.classList.add('stack-wrapper');
-  wrapper.style.display = 'grid';
   
   const stackObj = { 
     webpack: {
@@ -18,19 +18,38 @@ function Init (doc) {
       img: npmImg,
       name: 'Node Package Manager'
     },
-    jest: {
-      img: jestImg,
-      name: 'Jest'
-    },
     javascript: {
       img: javascriptImg,
       name: 'JavaScript'
+    },
+    jest: {
+      img: jestImg,
+      name: 'Jest'
     },
     git: {
       img: githubImg,
       name: 'Git'
     }
   }  
+
+  const stackObj2 = {
+    node: {
+      img: nodeImg,
+      name: 'Node JS'
+    },
+    three: {
+      img: threeImg,
+      name: 'Three JS'
+    },
+    babel: {
+      img: babelImg,
+      name: 'Babel JS'
+    }
+  } 
+
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('stack-wrapper');
+  wrapper.style.display = 'grid';
   
   const stackLength = Object.keys(stackObj).length;
   wrapper.style.gridTemplateColumns = `repeat(${stackLength},1fr)`
@@ -56,6 +75,36 @@ function Init (doc) {
 
   doc.appendChild(wrapper);
 
+  // 2nd row
+
+  const wrapper2 = document.createElement('div');
+  wrapper2.classList.add('stack-wrapper');
+  wrapper2.classList.add('second');
+  wrapper2.style.display = 'grid';
+  
+  const stackLength2 = Object.keys(stackObj2).length;
+  wrapper2.style.gridTemplateColumns = `repeat(${stackLength2},1fr)`
+  wrapper2.style.gridTemplateRows = `auto auto`;
+  wrapper2.style.rowGap = '12px';
+
+  for (const key in stackObj2) {
+    const p = document.createElement('p');
+    p.textContent = stackObj2[key].name;
+    p.style.gridRowStart = '2';
+    p.style.textAlign = 'center';
+    p.style.fontWeight = '600';
+    p.style.fontSize = '12px';
+    const imageSrc = stackObj2[key].img;
+    const img = document.createElement('img');
+    img.style.alignSelf = 'center';
+    img.style.justifySelf = 'center';
+    img.src = imageSrc;
+    img.style.width = '50px';
+    wrapper2.appendChild(img);
+    wrapper2.appendChild(p);
+  }
+
+  doc.appendChild(wrapper2);
 }
 
 let techStack = (() => {return {Init}})();
