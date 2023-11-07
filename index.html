@@ -14,13 +14,14 @@
           </div>
           <nav>
             <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Work</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
               <li><a href="">Resume</a></li>
             </ul>
           </nav>
-          <button class="theme-button"></button>
+          <input type="checkbox" id="darkmode-toggle" />
+          <label for="darkmode-toggle"></label>
         </div>
       </header>
       <main>
@@ -36,7 +37,7 @@
             </div>
             <img src="" class="my-photo" alt="Oleg's photo" />
           </div>
-          <h2>About</h2>
+          <h2 id="about">About</h2>
           <p>
             I'm a developer with a passion for coding. My main focus is on
             building responsive, modern webpages and apps.<br />
@@ -49,7 +50,7 @@
             <div class="stack-container"></div>
           </div>
           <button class="more-skills">See more skills</button>
-          <h2>My work</h2>
+          <h2 id="work">My work</h2>
           <section class="projects-container"></section>
           <h2>Other projects</h2>
           <ul class="other-projects">
@@ -99,26 +100,43 @@
           <h2 class="hobbies-header">Hobbies and interests</h2>
           <p class="hobbies">
             On my time away from development I try and keep active with
-            calisthenics. I stay curious and enjoy learning new things.<br />
-            <ul>
+            calisthenics. I stay curious and enjoy learning new things. <br />
+            Currently tinkering with Unreal Engine and creating 3d assets.
+            <br />
+            I love drawing. You can check out my art on
+            <a
+              target="_blank"
+              href="https://instagram.com/heresywolves?igshid=OGQ5ZDc2ODk2ZA=="
+              >my Instagram.</a
+            ><br />
+            I read things. Here is my
+            <a
+              target="_blank"
+              href="https://www.goodreads.com/user/show/137761435-sifer-sphynx"
+              >Goodreads profile.</a
+            >
+          </p>
+          <section id="contact" class="contact-section">
+            <h2 class="contact-header">Contact me</h2>
+            <p>
+              Hire me! I'm currently open to collaborations of all
+              magnitudes.<br />
+              <em>Or</em>, feel free to just say hi.<br />
+            </p>
+            <ul class="contact-list">
               <li>
-                I love drawing. You can check out my art on <a
-                  target="_blank"
-                  href="https://instagram.com/heresywolves?igshid=OGQ5ZDc2ODk2ZA=="
-                  >my Instagram</a
-                ><br />
-              </li> 
-              <li>
-                I read. Here is my
-                <a
-                  target="_blank"
-                  href="https://www.goodreads.com/user/show/137761435-sifer-sphynx"
-                  >Goodreads profile.</a
+                My primary email address is -
+                <a href="mailto:heresywolves@gmail.com"
+                  >heresywolves@gmail.com</a
                 >
               </li>
+              <li>
+                <a href="https://github.com/heresywolves">Github profile</a>
+              </li>
             </ul>
-          </p>
+          </section>
         </div>
+        <p class="rights">© 2023 Oleg Gerasimenko. All Rights Reserved.</p>
       </main>
     </div>
     <script src="main.js"></script>
