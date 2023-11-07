@@ -52,7 +52,7 @@ div.window-container.dark {
 }
 
 div.window-container.dark a {
-  color: var(--main-txt-color);
+  color: var(--dark-link-color);
 }
 
 /* Header */
