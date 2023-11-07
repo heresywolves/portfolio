@@ -74,6 +74,13 @@ export let Projects = (() => {
       const wrapper = document.createElement('div');
       wrapper.classList.add('project-wrapper');
 
+      const viewOverlay = document.createElement('div');
+      viewOverlay.classList.add('view-overlay');
+
+      const viewText = document.createElement('p');
+      viewText.classList.add('view-text');
+      viewText.textContent = "VIEW";
+
       const pcImg = document.createElement('img');
       pcImg.classList.add('pc-image');
       pcImg.src = projectsObj[key].pc;
@@ -109,9 +116,12 @@ export let Projects = (() => {
       gitButton.textContent = 'Github Source';
 
       wrapper.appendChild(pcImg);
+      wrapper.appendChild(viewOverlay);
+      wrapper.appendChild(viewText);
       if (projectsObj[key].phone !== ''){
         wrapper.appendChild(phoneImg);
       }
+
       wrapper.appendChild(title);
       wrapper.appendChild(stack);
       wrapper.appendChild(description);
@@ -119,7 +129,29 @@ export let Projects = (() => {
       wrapper.appendChild(gitIcon);
       container.appendChild(wrapper);
 
+      pcImg.addEventListener('click', (e) => {
+        console.log('clicked');
+        window.open(projectsObj[key].live, "_blank");
+      })
+
     }
+
+    // Setting overlay on hover of an image
+    let projectImages = document.querySelectorAll('.pc-image');
+    projectImages.forEach((item) => { item.addEventListener('mouseover', (e) => {
+        let overlay = e.target.nextElementSibling;
+        overlay.classList.add('show');
+        let textOverlay = overlay.nextElementSibling;
+        textOverlay.classList.add('show');
+      })
+    })
+    projectImages.forEach((item) => { item.addEventListener('mouseout', (e) => {
+        let overlay = e.target.nextElementSibling;
+        overlay.classList.remove('show');
+        let textOverlay = overlay.nextElementSibling;
+        textOverlay.classList.remove('show');
+      })
+    })
 
   }
 

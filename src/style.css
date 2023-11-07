@@ -273,6 +273,7 @@ button.more-skills:hover {
 
 /* Projects */
 
+
 .projects-container {
   margin-top: 20px;
 }
@@ -283,14 +284,52 @@ button.more-skills:hover {
   grid-template-columns: auto 50px 1fr;
   grid-template-rows: auto auto 1fr 20px;
   column-gap: 12px;
+  position: relative;
   /* this is in question */
   /* text-align: end; */
 }
+
+.view-overlay {
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  left: 3px;
+  top: 8px;
+  width: 294px;
+  height: 176px; 
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.view-overlay.show {
+  transform: scaleX(1);
+}
+
+.view-text {
+  pointer-events: none;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  left: 130px;
+  top: 80px;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.5s;
+}
+
+.view-text.show {
+  opacity: 1;
+}
+
 
 .projects-container .pc-image {
   width: 300px;
   grid-row: 1 / 5;
   align-self: end;
+  cursor: pointer;
 }
 
 .projects-container .phone-image {
@@ -299,6 +338,7 @@ button.more-skills:hover {
   position: relative;
   right: 40px;
   align-self: end;
+  z-index: 2;
 }
 
 .project-title {
