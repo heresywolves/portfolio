@@ -71,7 +71,7 @@ header.dark p{
 }
 
 header.dark a, header.dark a:visited {
-  color: var(--main-txt-color);
+  color: var(--main-txt-color) !important;
 }
 
 header .header-container {

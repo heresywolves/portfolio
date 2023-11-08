@@ -17,6 +17,14 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.(glb|gltf)$/i,
+        loader: 'file-loader',
+        options: {
+          publicPath: './',
+          name: '[name].[ext]'
+        }
+      },
     ],
   },
 };

@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import modelImport from './keyboard.gltf';
 
 export let threemodel = (() => {
 
@@ -25,7 +26,7 @@ function init(color) {
   //model
   let model;
   const loader = new GLTFLoader();
-  loader.load('../src/keyboard.gltf', gltf => {
+  loader.load(modelImport, gltf => {
     model = gltf.scene;
     scene.add(gltf.scene);
   },
