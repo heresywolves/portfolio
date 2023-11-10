@@ -48,7 +48,10 @@ let darkTheme = mediaQueryObj.matches; //
 console.log('User prefers dark-theme: ' + darkTheme);
 
 if (darkTheme) {
-  document.querySelector('header input').checked = true;
+  const input = document.querySelector('header input');
+  if (!input.checked) {
+    document.querySelector('header input').checked = true;
+  }
   darkTheme = false;
   changeTheme();
 }
