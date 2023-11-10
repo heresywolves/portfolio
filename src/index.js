@@ -1,3 +1,4 @@
+import { spinnerLoader } from './spinnerLoader';
 import './style.css'
 import './loadImages'
 import techStack from './techStack'
@@ -5,6 +6,10 @@ import moreSkills from './moreSkills';
 import { Projects } from './projects';
 import { threemodel } from './threemodel';
 
+
+// Spinner loader
+
+document.addEventListener("DOMContentLoaded", spinnerLoader.close);
 
 
 // Render page

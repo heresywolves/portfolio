@@ -31,6 +31,45 @@ body.dark {
   background-color: var(--dark-bg-color);
 }
 
+.spinner-loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background-color: var(--dark-bg-color);
+  z-index: 10;
+  display: flex;
+  transform-origin: top;
+  transition: 1s;
+  justify-content: center;
+  align-items: center;
+  transform: scaleY(1);
+}
+
+.spinner-img {
+  width: 100px;
+  animation: spin 1s linear infinite;
+  transition: 1s;
+}
+
+.spinner-loader.closed {
+  transform: scaleY(0);
+}
+
+.spinner-img.closed {
+  opacity: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 div.window-container {
   min-height: 100vh;
   background-color: var(--main-bg-color);
