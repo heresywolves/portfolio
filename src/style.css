@@ -31,6 +31,11 @@ body.dark {
   background-color: var(--dark-bg-color);
 }
 
+.phone-nav, .phone-nav-container, .mobile-menu {
+  display: none;
+}
+
+
 .spinner-loader {
   position: fixed;
   width: 100%;
@@ -487,4 +492,136 @@ section.contact-section {
 
 .rights.dark {
   color: rgba(255,255,255,0.5);
+}
+
+/* Phone CSS */
+
+@media (max-width: 800px) {
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 30px !important;
+  }
+
+  .spinner-loader {
+    display: none;
+  }
+
+  .three-js {
+    display: none;
+  }
+
+  .project-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .view-overlay {
+    display: none;
+  }
+
+  .projects-container .pc-image { 
+    grid-column: 1;
+    justify-self: center;
+    grid-row: 1 / 2;
+  }
+
+  .projects-container .phone-image {
+    grid-column: 1;
+    justify-self: center;
+    left: 100px;
+    grid-row: 1 / 2;
+  }
+
+  .project-title {
+    justify-self: center;
+    grid-row: 2 / 3;
+    grid-column: 1;
+    margin: 15px 0px;
+    margin-top: 30px;
+  }
+
+  .project-stack {
+    grid-row: 3 / 4;
+    grid-column: 1;
+    margin: 15px 0px;
+    justify-self: center;
+  }
+
+  .project-description {
+    grid-column: 1;
+    grid-row: 4 / 5;
+    margin: 15px 0px
+  }
+
+  .project-github-link{
+    grid-column: 1;
+    grid-row: 5 / 6;
+    margin: 15px 0px
+  }
+
+  .project-github-icon{
+    grid-row: 5 / 6;
+    grid-column: 1;
+  }
+
+  .greeting {
+    width: 100%;
+  }
+
+  .contact-header {
+    text-align: center;
+  }
+
+  .header-container .pc-nav{
+    display: none;
+  }
+
+  .phone-nav-container.active {
+    display: block;
+    position: fixed;
+    z-index: 14;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .phone-nav {
+    background-color: #161616;
+    display: block;
+    position: fixed;
+    width: 45vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    z-index: 15;
+    padding: 80px 20px;
+    min-width: 120px;
+    font-size: 30px;
+    transform: translateX(-50vw);
+    transition: 0.3s;
+  }
+
+  .phone-nav.active {
+    transform: translateX(0);
+  }
+
+  .phone-nav li {
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+
+  .phone-nav a {
+
+    color: var(--dark-txt-color) !important;
+  }
+
+  img.mobile-menu {
+    display: block;
+    width: 30px;
+  }
+  
 }

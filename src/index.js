@@ -40,7 +40,14 @@ function showLess() {
 Projects.load();
 
 
-threemodel.init('#f0e7db');
+  try {
+    if (window.innerWidth > 900) {
+      threemodel.init('#f0e7db');
+    }
+  } catch {
+    document.querySelector('.main-container').style.marginTop = "40px";
+
+  }
 
 // Theme change
 let mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
@@ -80,3 +87,22 @@ function changeTheme(e) {
     darkTheme = false;
   }
 }
+
+// Mobile menu
+
+const phoneContainer = document.querySelector('.phone-nav-container');
+const menuButton = document.querySelector('.mobile-menu');
+const phoneNav = document.querySelector('.phone-nav');
+menuButton.addEventListener('click', () => {
+  phoneNav.classList.add('active');
+  phoneContainer.classList.add('active');
+})
+
+phoneNav.addEventListener('click', (e) => {
+  e.stopPropagation();
+})
+
+phoneContainer.addEventListener('click', () => {
+  phoneNav.classList.remove('active');
+  phoneContainer.classList.remove('active');
+})
