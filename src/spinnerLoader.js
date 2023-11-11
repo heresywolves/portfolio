@@ -10,10 +10,12 @@ export let spinnerLoader = (() => {
   doc.appendChild(img);
 
   function close () {
-    img.classList.add('closed');
     setTimeout(() => {
-      doc.classList.add('closed');
-    }, 1500);
+      img.classList.add('closed');
+      setTimeout(() => {
+        doc.classList.add('closed');
+      }, 1500);
+    }, 1000);
   }
   return {close}
 })();
