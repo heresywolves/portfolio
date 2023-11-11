@@ -620,7 +620,7 @@ section.contact-section {
     min-width: 120px;
     font-size: 30px;
     transform: translateX(-50vw);
-    transition: 0.3s;
+    transition: 0.5s;
   }
 
   .phone-nav.active {
