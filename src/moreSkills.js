@@ -31,7 +31,10 @@ function Init (doc) {
     illustrator: {
       img: illustratorImg,
       name: 'Adobe Illustrator'
-    },
+    }
+  }  
+
+  const stackObj2 = {
     photoshop: {
       img: photoshopImg,
       name: 'Adobe Photoshop'
@@ -40,7 +43,7 @@ function Init (doc) {
       img: figmaImg,
       name: 'Figma'
     }
-  }  
+  }
   
   const stackLength = Object.keys(stackObj).length;
   wrapper.style.gridTemplateColumns = `repeat(${stackLength},1fr)`
@@ -59,7 +62,7 @@ function Init (doc) {
     img.style.alignSelf = 'center';
     img.style.justifySelf = 'center';
     img.src = imageSrc;
-    img.style.width = '50px';
+    img.style.width = '30px';
     wrapper.appendChild(img);
     wrapper.appendChild(p);
   }
@@ -67,6 +70,38 @@ function Init (doc) {
   doc.appendChild(wrapper);
   wrapper.style.transform = 'scale(1, 0)';
   wrapper.style.maxHeight = '0';
+
+  // Second line
+
+  const wrapper2 = document.createElement('div');
+  wrapper2.classList.add('skills-wrapper');
+  wrapper2.style.display = 'grid';
+
+  const stackLength2 = Object.keys(stackObj2).length;
+  wrapper2.style.gridTemplateColumns = `repeat(${stackLength2},1fr)`
+  wrapper2.style.gridTemplateRows = `auto auto`;
+  wrapper2.style.rowGap = '12px';
+
+  for (const key in stackObj2) {
+    const p = document.createElement('p');
+    p.textContent = stackObj2[key].name;
+    p.style.gridRowStart = '2';
+    p.style.textAlign = 'center';
+    p.style.fontWeight = '600';
+    p.style.fontSize = '12px';
+    const imageSrc = stackObj2[key].img;
+    const img = document.createElement('img');
+    img.style.alignSelf = 'center';
+    img.style.justifySelf = 'center';
+    img.src = imageSrc;
+    img.style.width = '30px';
+    wrapper2.appendChild(img);
+    wrapper2.appendChild(p);
+  }
+
+  doc.appendChild(wrapper2);
+  wrapper2.style.transform = 'scale(1, 0)';
+  wrapper2.style.maxHeight = '0';
 }
 
 let moreSkills = (() => {return {Init}})();

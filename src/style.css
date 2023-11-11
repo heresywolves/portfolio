@@ -290,6 +290,7 @@ h3.stack-heading.dark:after {
 
 .skills-container {
   position: relative;
+  height: auto;
 }
 
 button.more-skills {
@@ -312,7 +313,7 @@ button.more-skills:hover {
 }
 
 .skills-wrapper {
-  margin-top: 24px;
+  margin-bottom: 12px;
   transition: all 0.6s ease-in-out;
   transform-origin: top;
 }
@@ -407,12 +408,13 @@ button.more-skills:hover {
   margin-top: 6px;
 }
 
-.stack-wrapper, .skills-wrapper {
+.stack-wrapper {
   margin-bottom: 24px;
 }
 
 .stack-wrapper.second {
   /* padding: 0px 110px; */
+  margin-bottom: 40px;
 }
 
 .project-description {
@@ -637,6 +639,7 @@ section.contact-section {
 
   h3.stack-heading {
     margin-top: 50px !important;
+    margin-bottom: 50px !important;
   }
   
 }
