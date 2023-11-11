@@ -61,7 +61,7 @@ export let Projects = (() => {
       name: 'Library App',
       pc: libraryPC,
       phone: '',
-      description: "Personal online library application that can keep track of saved books by different markings and display statistics",
+      description: "Personal online library application that can keep track of saved books by different markings and display statistics.",
       stack: 'Vanilla JS, HTML, CSS, Webpack',
       github: 'https://github.com/heresywolves/library-app',
       live: 'https://heresywolves.github.io/library-app/'

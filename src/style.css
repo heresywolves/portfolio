@@ -474,12 +474,25 @@ ul.other-projects li{
   margin-top: 50px;
 }
 
+
+/* Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-list li {
   margin: 10px 0;
 }
 
 section.contact-section {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+}
+
+.contact-section img {
+  width: 100px;
+  align-self: center;
 }
 
 .rights {
@@ -554,18 +567,23 @@ section.contact-section {
   .project-description {
     grid-column: 1;
     grid-row: 4 / 5;
-    margin: 15px 0px
+    margin: 15px 0px;
+    justify-self: center;
+    text-align: center;
   }
 
   .project-github-link{
     grid-column: 1;
     grid-row: 5 / 6;
-    margin: 15px 0px
+    margin: 15px 0px;
+    justify-self: center;
+    margin-right: 10px;
   }
 
   .project-github-icon{
     grid-row: 5 / 6;
     grid-column: 1;
+    justify-self: center;
   }
 
   .greeting {
