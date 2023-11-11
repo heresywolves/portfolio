@@ -45,7 +45,7 @@ function Init (doc) {
     },
     babel: {
       img: babelImg,
-      name: 'Babel JS'
+      name: 'Babel'
     },
     react: {
       img: reactImg,

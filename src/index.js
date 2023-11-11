@@ -5,6 +5,7 @@ import techStack from './techStack'
 import moreSkills from './moreSkills';
 import { Projects } from './projects';
 import { threemodel } from './threemodel';
+import resume from './resume.pdf';
 
 
 // Spinner loader
@@ -25,6 +26,7 @@ function showSkills() {
   skills.forEach((wrapper) => {
     wrapper.style.transform = 'scale(1, 1)';
     wrapper.style.maxHeight = '250px';
+    wrapper.style.marginBottom = '24px';
   })
   skillsButton.removeEventListener('click', showSkills);
   skillsButton.textContent = 'See less';
@@ -35,8 +37,9 @@ function showLess() {
   skills.forEach((wrapper) => {
     wrapper.style.transform = 'scale(1, 0)';
     wrapper.style.maxHeight = '0px';
+    wrapper.style.marginBottom = '0px';
   })
-  skillsButton.textContent = 'See more skills';
+  skillsButton.textContent = 'See more tech skills';
   skillsButton.removeEventListener('click', showLess);
   skillsButton.addEventListener('click', showSkills);
 }
@@ -109,4 +112,14 @@ phoneNav.addEventListener('click', (e) => {
 phoneContainer.addEventListener('click', () => {
   phoneNav.classList.remove('active');
   phoneContainer.classList.remove('active');
+})
+
+// Resume pdf links
+
+const resumeButtons = document.querySelectorAll('resume-link');
+
+resumeButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    window.open(resume, '_blank').focus();
+  })
 })

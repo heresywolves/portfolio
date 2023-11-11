@@ -18,7 +18,7 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.(glb|gltf)$/i,
+        test: /\.(glb|gltf|pdf)$/i,
         loader: 'file-loader',
         options: {
           publicPath: './',
