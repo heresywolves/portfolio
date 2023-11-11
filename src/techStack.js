@@ -6,6 +6,8 @@ import githubImg from './img/github.png'
 import nodeImg from './img/node.png'
 import threeImg from './img/three.png'
 import babelImg from './img/babel.png'
+import reactImg from './img/react.png'
+import sassImg from './img/sass.png'
 
 function Init (doc) {
   
@@ -44,7 +46,16 @@ function Init (doc) {
     babel: {
       img: babelImg,
       name: 'Babel JS'
+    },
+    react: {
+      img: reactImg,
+      name: 'React'
+    },
+    sass: {
+      img: sassImg,
+      name: 'Sass'
     }
+
   } 
 
   const wrapper = document.createElement('div');

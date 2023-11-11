@@ -76,6 +76,8 @@ body.dark {
   }
 }
 
+/* Window */
+
 div.window-container {
   min-height: 100vh;
   background-color: var(--main-bg-color);
@@ -410,7 +412,7 @@ button.more-skills:hover {
 }
 
 .stack-wrapper.second {
-  padding: 0px 110px;
+  /* padding: 0px 110px; */
 }
 
 .project-description {
@@ -497,7 +499,7 @@ section.contact-section {
 
 /* Phone CSS */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
   .main-container {
     display: flex;
@@ -623,6 +625,18 @@ section.contact-section {
   img.mobile-menu {
     display: block;
     width: 30px;
+  }
+
+  h2 {
+    margin-top: 100px !important;
+  }
+
+  h2#about {
+    margin-top: 50px !important;
+  }
+
+  h3.stack-heading {
+    margin-top: 50px !important;
   }
   
 }
