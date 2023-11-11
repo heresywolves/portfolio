@@ -490,8 +490,8 @@ section.contact-section {
   margin-bottom: 50px;
 }
 
-.contact-section img {
-  width: 100px;
+.contact-section .footer-gif {
+  width: 250px;
   align-self: center;
 }
 
@@ -649,6 +649,5 @@ section.contact-section {
   h2#about {
     margin-top: 50px !important;
   }
-
-  
 }
+

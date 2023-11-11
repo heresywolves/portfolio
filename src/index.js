@@ -5,7 +5,7 @@ import techStack from './techStack'
 import moreSkills from './moreSkills';
 import { Projects } from './projects';
 import { threemodel } from './threemodel';
-import resume from './resume.pdf';
+// import resume from './resume.pdf';
 
 
 // Spinner loader
@@ -116,10 +116,10 @@ phoneContainer.addEventListener('click', () => {
 
 // Resume pdf links
 
-const resumeButtons = document.querySelectorAll('resume-link');
+// const resumeButtons = document.querySelectorAll('resume-link');
 
-resumeButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    window.open(resume, '_blank').focus();
-  })
-})
+// resumeButtons.forEach((button) => {
+//   button.addEventListener('click', () => {
+//     window.open(resume, '_blank').focus();
+//   })
+// })
