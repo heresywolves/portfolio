@@ -8,6 +8,6 @@ export const loadImages = (() => {
   myImg.src = Me2;
   const menuPng = document.querySelector('.mobile-menu');
   menuPng.src = phoneMenu;
-  // const footerImg = document.querySelector('.footer-gif');
-  // footerImg.src = butterflies;
+  const footerImg = document.querySelector('.footer-gif');
+  footerImg.src = butterflies;
 })();
