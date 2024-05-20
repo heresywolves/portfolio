@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heresywolves/portfolio.git"
+    "url": "git+https://github.com/howlbones/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/heresywolves/portfolio/issues"
+    "url": "https://github.com/howlbones/portfolio/issues"
   },
-  "homepage": "https://github.com/heresywolves/portfolio#readme",
+  "homepage": "https://github.com/howlbones/portfolio#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
