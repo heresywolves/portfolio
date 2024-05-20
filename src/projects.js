@@ -18,8 +18,8 @@ export let Projects = (() => {
       phone: dashboardPhone,
       description: 'This dashboard serves as a responsive layout example that utilizes the strengths of grid and flexbox layouts.',
       stack: 'Vanilla JS, HTML, CSS',
-      github: 'https://github.com/heresywolves/admin-dashboard',
-      live: 'https://heresywolves.github.io/admin-dashboard/'
+      github: 'https://github.com/howlbones/admin-dashboard',
+      live: 'https://howlbones.github.io/admin-dashboard/'
     },
     todo: {
       name: 'ToDo App',
@@ -27,8 +27,8 @@ export let Projects = (() => {
       phone: '',
       description: 'Fully functioning app that lets you organize, create and check off completed tasks. Website uses browsers local storage.',
       stack: 'Vanilla JS, HTML, CSS, Webpack',
-      github: 'https://github.com/heresywolves/todo-list',
-      live: 'https://heresywolves.github.io/todo-list/'
+      github: 'https://github.com/howlbones/todo-list',
+      live: 'https://howlbones.github.io/todo-list/'
     },
     weather: {
       name: 'Weather App',
@@ -36,8 +36,8 @@ export let Projects = (() => {
       phone: '',
       description: "This app works with external API's for fresh weather data, easy on-demand search suggestions and pictures based on the weather.",
       stack: 'Vanilla JS, HTML, CSS, Webpack',
-      github: 'https://github.com/heresywolves/weather-app',
-      live: 'https://heresywolves.github.io/weather-app/'
+      github: 'https://github.com/howlbones/weather-app',
+      live: 'https://howlbones.github.io/weather-app/'
     },
     form: {
       name: 'Online Form',
@@ -45,8 +45,8 @@ export let Projects = (() => {
       phone: formPhone,
       description: "Responsive fill-out form that utilises JavaScript for client-side validation.",
       stack: 'Vanilla JS, HTML, CSS',
-      github: 'https://github.com/heresywolves/online-form',
-      live: 'https://heresywolves.github.io/online-form/'
+      github: 'https://github.com/howlbones/online-form',
+      live: 'https://howlbones.github.io/online-form/'
     },
     restaurant: {
       name: 'Restaurant Menu',
@@ -54,8 +54,8 @@ export let Projects = (() => {
       phone: '',
       description: "A simple, clean restaurant homepage design that generates page content dynamically throughout tabs.",
       stack: 'Vanilla JS, HTML, CSS, Webpack',
-      github: 'https://github.com/heresywolves/restaurant-menu',
-      live: 'https://heresywolves.github.io/restaurant-menu/'
+      github: 'https://github.com/howlbones/restaurant-menu',
+      live: 'https://howlbones.github.io/restaurant-menu/'
     },
     library: {
       name: 'Library App',
@@ -63,8 +63,8 @@ export let Projects = (() => {
       phone: '',
       description: "Personal online library application that can keep track of saved books by different markings and display statistics.",
       stack: 'Vanilla JS, HTML, CSS, Webpack',
-      github: 'https://github.com/heresywolves/library-app',
-      live: 'https://heresywolves.github.io/library-app/'
+      github: 'https://github.com/howlbones/library-app',
+      live: 'https://howlbones.github.io/library-app/'
     }
   }
 
