@@ -13,14 +13,18 @@ html {
 }
 
 :root {
-  --link-color: #3e0eff;
+  --link-color: #001571;
   --main-bg-color: #f0e7db;
   --main-txt-color: #1a202c;
   /* --main-secondary-color:#f5f0e8; */
   --main-secondary-color: rgba(255,255,255,0.5);
   --dark-bg-color: #242424;
   --dark-txt-color: #ededed;
-  --dark-link-color: #89ceff;
+  --dark-link-color: #e7cc34;
+}
+
+li {
+  list-style-type: none;
 }
 
 body {
@@ -33,6 +37,10 @@ body.dark {
 
 .phone-nav, .phone-nav-container, .mobile-menu {
   display: none;
+}
+
+a, a:hover {
+  text-decoration: none !important;
 }
 
 /* Loader */
@@ -89,8 +97,9 @@ div.window-container a, div.window-container a:visited {
   text-decoration: none;
   color: var(--link-color);
 }
+
 div.window-container a:hover, div.window-container a:visited:hover {
-  text-decoration: underline;
+  color: rgba(21, 11, 56, 1);
 }
 
 div.window-container.dark {
@@ -119,10 +128,15 @@ header.dark p{
 
 header.dark a, header.dark a:visited {
   color: var(--main-txt-color) !important;
+  transition: 0.2s;
+}
+
+header.dark a:hover {
+  color: rgb(0, 0, 0) !important;
 }
 
 header .header-container {
-  max-width: 600px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,10 +149,6 @@ header a {
   color: var(--link-color);
 }
 
-header a:hover, header a:focus {
-  text-decoration: underline;
-}
-
 p.logo-name {
   font-weight: 650;
   font-size: 20px;
@@ -149,8 +159,9 @@ header ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 15px;
+  gap: 40px;
 }
+
 
 header label {
   cursor: pointer;
