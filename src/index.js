@@ -2,7 +2,6 @@
 import './style.css'
 import './loadImages'
 import techStack from './techStack'
-import moreSkills from './moreSkills';
 import { Projects } from './projects';
 import { threemodel } from './threemodel';
 // import resume from './resume.pdf';
@@ -16,7 +15,6 @@ import { threemodel } from './threemodel';
 // Render page
 
 techStack.Init(document.querySelector('.stack-container'));
-moreSkills.Init(document.querySelector('.stack-container'));
 const skills = document.querySelectorAll('.skills-wrapper');
 
 const skillsButton = document.querySelector('button.more-skills');
@@ -59,7 +57,6 @@ Projects.load();
 // Theme change
 let mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
 let darkTheme = mediaQueryObj.matches; // 
-console.log('User prefers dark-theme: ' + darkTheme);
 
 if (darkTheme) {
   const input = document.querySelector('header input');

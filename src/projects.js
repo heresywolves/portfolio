@@ -9,8 +9,6 @@ import libraryPC from './img/library-pc.png'
 import restaurantPC from './img/restaurant-pc.png'
 
 export let Projects = (() => {
-  let container = document.querySelector('.projects-container');
-  
   let projectsObj = {
     dashboard: {
       name: 'Admin Dashboard',
@@ -71,88 +69,8 @@ export let Projects = (() => {
   function load() {
 
     for (const key in projectsObj) {
-      const wrapper = document.createElement('div');
-      wrapper.classList.add('project-wrapper');
-
-      const viewOverlay = document.createElement('div');
-      viewOverlay.classList.add('view-overlay');
-
-      const viewText = document.createElement('p');
-      viewText.classList.add('view-text');
-      viewText.textContent = "VIEW";
-
-      const pcImg = document.createElement('img');
-      pcImg.classList.add('pc-image');
-      pcImg.src = projectsObj[key].pc;
-      
-      const phoneImg = document.createElement('img');
-      if (projectsObj[key].phone !== ''){
-        phoneImg.src = projectsObj[key].phone;
-        phoneImg.classList.add('phone-image');
-      }
-
-      const stack = document.createElement('p');
-      stack.classList.add('project-stack');
-      stack.textContent = projectsObj[key].stack;
-
-      const title = document.createElement('a');
-      title.classList.add('project-title');
-      title.href = projectsObj[key].live;
-      title.textContent = projectsObj[key].name;
-      title.target = '_blank';
-
-      const description = document.createElement('p');
-      description.classList.add('project-description');
-      description.textContent = projectsObj[key].description;
-
-      const gitButton = document.createElement('a');
-      gitButton.classList.add('project-github-link');
-      gitButton.href = projectsObj[key].github;
-      gitButton.target = '_blank';
-      const gitIcon = document.createElement('img');
-      gitIcon.classList.add('project-github-icon');
-      gitIcon.src = gitImg;
-      gitIcon.style.width = '15px';
-      gitButton.textContent = 'Github Source';
-
-      wrapper.appendChild(pcImg);
-      wrapper.appendChild(viewOverlay);
-      wrapper.appendChild(viewText);
-      if (projectsObj[key].phone !== ''){
-        wrapper.appendChild(phoneImg);
-      }
-
-      wrapper.appendChild(title);
-      wrapper.appendChild(stack);
-      wrapper.appendChild(description);
-      wrapper.appendChild(gitButton);
-      wrapper.appendChild(gitIcon);
-      container.appendChild(wrapper);
-
-      pcImg.addEventListener('click', (e) => {
-        console.log('clicked');
-        window.open(projectsObj[key].live, "_blank");
-      })
 
     }
-
-    // Setting overlay on hover of an image
-    let projectImages = document.querySelectorAll('.pc-image');
-    projectImages.forEach((item) => { item.addEventListener('mouseover', (e) => {
-        let overlay = e.target.nextElementSibling;
-        overlay.classList.add('show');
-        let textOverlay = overlay.nextElementSibling;
-        textOverlay.classList.add('show');
-      })
-    })
-    projectImages.forEach((item) => { item.addEventListener('mouseout', (e) => {
-        let overlay = e.target.nextElementSibling;
-        overlay.classList.remove('show');
-        let textOverlay = overlay.nextElementSibling;
-        textOverlay.classList.remove('show');
-      })
-    })
-
   }
 
   return {load}
