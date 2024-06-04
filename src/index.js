@@ -15,32 +15,8 @@ import { threemodel } from './threemodel';
 // Render page
 
 techStack.Init(document.querySelector('.stack-container'));
-const skills = document.querySelectorAll('.skills-wrapper');
+const skillsWrapper = document.querySelectorAll('.skills-wrapper');
 
-const skillsButton = document.querySelector('button.more-skills');
-skillsButton.addEventListener('click', showSkills);
-
-function showSkills() {
-  skills.forEach((wrapper) => {
-    wrapper.style.transform = 'scale(1, 1)';
-    wrapper.style.maxHeight = '250px';
-    wrapper.style.marginBottom = '24px';
-  })
-  skillsButton.removeEventListener('click', showSkills);
-  skillsButton.textContent = 'See less';
-  skillsButton.addEventListener('click', showLess);
-}
-
-function showLess() {
-  skills.forEach((wrapper) => {
-    wrapper.style.transform = 'scale(1, 0)';
-    wrapper.style.maxHeight = '0px';
-    wrapper.style.marginBottom = '0px';
-  })
-  skillsButton.textContent = 'See more tech skills';
-  skillsButton.removeEventListener('click', showLess);
-  skillsButton.addEventListener('click', showSkills);
-}
 
 Projects.load();
 
@@ -75,8 +51,6 @@ function changeTheme(e) {
     document.querySelector('header').classList.add('dark');
     document.querySelector('.rights').classList.add('dark');
     document.querySelector('h3.stack-heading').classList.add('dark');
-    document.querySelector('.greeting').classList.add('dark');
-    document.querySelector('button.more-skills').classList.add('dark');
     threemodel.changeColor('#242424');
     darkTheme = true;
   } else {
@@ -85,8 +59,6 @@ function changeTheme(e) {
     document.querySelector('header').classList.remove('dark');
     document.querySelector('.rights').classList.remove('dark');
     document.querySelector('h3.stack-heading').classList.remove('dark');
-    document.querySelector('.greeting').classList.remove('dark');
-    document.querySelector('button.more-skills').classList.remove('dark');
     threemodel.changeColor('#f0e7db');
     darkTheme = false;
   }
