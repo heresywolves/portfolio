@@ -211,7 +211,7 @@ header input:checked + label:after{
 }
 
 div.main-container {
-  max-width: 600px;
+  max-width: 1400px;
   padding: 0px 15px 0px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -219,18 +219,6 @@ div.main-container {
   flex-direction: column;
 }
 
-div.greeting {
-  background-color: var(--main-secondary-color);
-  padding: 10px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-div.greeting.dark {
-  color: var(--dark-txt-color);
-  background-color: rgba(255,255,255,0.1);
-}
 
 div.name-card-container {
   display: flex;
@@ -238,27 +226,31 @@ div.name-card-container {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 650;
   margin-bottom: 12px;
 }
 
 h2 {
+  font-size: 40px;
   font-weight: 650;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 12px;
 }
 
 p {
+  font-size: 30px;
   letter-spacing: 1px;
   line-height: 1.5em;
 }
 
+body.dark .name-role h1 {
+  color: var(--dark-link-color);
+}
+
 img.my-photo {
   border-radius: 50%;
-  border: solid 2px var(--main-secondary-color);
-  width: 120px;
-  height: 120px;
+  max-width: 300px;
 }
 
 /* Tech stack */
@@ -471,13 +463,33 @@ ul.other-projects li{
 /* Three js */
 
 .three-js {
+  height: calc(100vh + 100px);
   margin-left: auto;
   margin-right: auto;
 }
 
 .three-js canvas {
   margin: -20px auto -60px auto;
+  width: 100%;
 }
+
+/* Greeting */
+.greeting {
+  position: absolute;
+  inset: 0;
+  font-size: 140px;
+  font-weight: 700;
+  letter-spacing: 80px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  height: min-content;
+  color: white;
+  mix-blend-mode: difference;
+  user-select: none;
+  pointer-events: none;
+}
+
 
 /* Hobbies */
 

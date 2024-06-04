@@ -13,7 +13,7 @@ function init(color) {
   const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
   const renderer = new THREE.WebGLRenderer();
-  renderer.setSize( window.innerWidth/2, window.innerHeight/2);
+  renderer.setSize( window.innerWidth, window.innerHeight);
   let dom = document.querySelector('.three-js');
   dom.appendChild( renderer.domElement );
 
@@ -45,8 +45,9 @@ function init(color) {
   controls.autoRotate = true;
   // controls.autoRotateSpeed = 8;
   controls.enablePan = false;
+  controls.enableZoom = false;
   camera.position.z = 0.5;
-
+  controls.noPan = true;
 
   function animate() {
 
