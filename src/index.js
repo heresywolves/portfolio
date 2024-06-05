@@ -4,6 +4,7 @@ import './loadImages'
 import techStack from './techStack'
 import { Projects } from './projects';
 import { threemodel } from './threemodel';
+import { typewriterEffect } from './typewriterEffect';
 // import resume from './resume.pdf';
 
 
@@ -16,6 +17,8 @@ import { threemodel } from './threemodel';
 
 techStack.Init(document.querySelector('.stack-container'));
 const skillsWrapper = document.querySelectorAll('.skills-wrapper');
+
+// typewriterEffect(document.querySelector('.greeting'), "Привет!");
 
 
 Projects.load();
