@@ -311,11 +311,12 @@ h3.stack-heading.dark:after {
   max-width: 600px;
   margin: 0 auto 100px auto;
   position: relative;
-  left: 30px;
+  left: 48px;
 }
 
 .stack-container p {
-  font-size: 31px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
 
 .stack-container img {
@@ -337,135 +338,59 @@ h3.stack-heading.dark:after {
   margin-top: 20px;
 }
 
-.project-wrapper {
-  margin: 24px 0px 100px 0px;
+.project-container {
+  margin: 100px 0;
   display: grid;
-  grid-template-columns: auto 50px 1fr;
-  grid-template-rows: auto auto 1fr 20px;
-  column-gap: 12px;
+  grid-template-columns: 1fr min-content;
+  gap: 50px;
+}
+
+.img-container {
+  grid-column: 2;
   position: relative;
-  /* this is in question */
-  /* text-align: end; */
 }
 
-.view-overlay {
-  pointer-events: none;
-  position: absolute;
-  background-color: black;
-  opacity: 0.5;
-  left: 3px;
-  top: 8px;
-  width: 294px;
-  height: 176px; 
-  z-index: 1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s;
-}
-
-.view-overlay.show {
-  transform: scaleX(1);
-}
-
-.view-text {
-  pointer-events: none;
-  position: absolute;
-  color: white;
-  z-index: 2;
-  left: 130px;
-  top: 80px;
-  opacity: 0;
-  text-align: center;
-  transition: opacity 0.5s;
-}
-
-.view-text.show {
-  opacity: 1;
-}
-
-
-.projects-container .pc-image {
-  width: 300px;
-  grid-row: 1 / 5;
-  align-self: end;
-  cursor: pointer;
-}
-
-.projects-container .phone-image {
-  width: 80px;
-  grid-row: 1 / 5;
-  position: relative;
-  right: 40px;
-  align-self: end;
-  z-index: 2;
-}
-
-.project-title {
-  text-decoration: none;
-  color: var(--link-color);
-  font-size: 22px;
-  grid-column: 3;
+.text-container {
+  grid-column: 1;
   grid-row: 1;
 }
 
-.project-title:hover {
-  text-decoration: underline;
+body.dark .project-name {
+  color: var(--dark-link-color);
 }
 
-.project-stack {
-  font-size: 12px;
-  grid-column: 3;
-  grid-row: 2;
-  margin-top: 6px;
+.project-pc-img {
+  width: 700px;
 }
 
-.stack-wrapper {
-  margin-bottom: 24px;
+.project-phone-img {
+  width: 150px;
+  position: absolute;
+  bottom: -30px;
+  right: -80px;
 }
 
-.stack-wrapper.second {
-  /* padding: 0px 110px; */
-  margin-bottom: 40px;
+.project-live-link {
+  margin-left: 40px;
+}
+
+body.dark .project-live-link::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--dark-link-color);
 }
 
 .project-description {
-  margin-top: 18px;
-  grid-column: 3;
-  grid-row: 3;
+  font-size: 25px;
 }
 
-.project-github-link{
-  font-size: 12px;
-  text-align: end;
-  text-decoration: none;
-  grid-column: 3;
-  grid-row: 4;
-  width: 120px;
-  justify-self: end;
-  align-self: center;
-  cursor: pointer;
-  background-color: transparent;
-  color: var(--link-color);
-  border: none;
+.project-stack {
+  font-size: 20px;
 }
 
-.project-github-link:hover {
-  text-decoration: underline;
-}
-
-.project-github-icon {
-  align-self: center;
-  grid-column: 3;
-  grid-row: 4;
-  justify-self: end;
-  margin-right: 84px;
-  position: relative;
-  bottom: 1px;
-}
-
-/* Other projects */
-ul.other-projects li{
-  margin: 10px 0;
+.projects-container p {
+  margin-bottom: 20px;
 }
 
 
