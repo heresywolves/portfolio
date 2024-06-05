@@ -21,6 +21,7 @@ html {
   --dark-bg-color: #242424;
   --dark-txt-color: #ededed;
   --dark-link-color: #e7cc34;
+  --red-color: rgb(193, 95, 95);
 }
 
 li {
@@ -41,6 +42,14 @@ body.dark {
 
 a, a:hover {
   text-decoration: none !important;
+}
+
+.em-color {
+  color: var(--link-color);
+}
+
+body.dark .em-color {
+  color: var(--dark-link-color)
 }
 
 /* Loader */
@@ -251,13 +260,15 @@ body.dark .name-role h1 {
 img.my-photo {
   border-radius: 50%;
   max-width: 300px;
+  margin-right: 120px;
 }
 
 /* Tech stack */
 h3.stack-heading {
+  font-size: 30px;
   position: relative;
-  max-width: 300px;
-  margin: 50px auto 30px auto;
+  max-width: 500px;
+  margin: 100px auto 50px auto;
   text-align: center;
 }
 
@@ -291,33 +302,29 @@ h3.stack-heading.dark:after {
   background-color: var(--dark-txt-color);
 }
 
-.skills-container {
+.stack-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 20px;
+  max-width: 600px;
+  margin: 0 auto 100px auto;
   position: relative;
-  height: auto;
+  left: 30px;
 }
 
-button.more-skills {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  border: none;
-  background-color: transparent;
-  padding: 5px;
-  color: var(--link-color);
+.stack-container p {
+  font-size: 31px;
 }
 
-button.more-skills.dark {
-  color: var(--dark-link-color);
+.stack-container img {
+  width: 40px;
+  height: min-content;
 }
 
-button.more-skills:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.skills-wrapper {
-  transition: all 0.6s ease-in-out;
-  transform-origin: top;
+.skill-item-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 
