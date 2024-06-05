@@ -232,6 +232,8 @@ div.main-container {
 div.name-card-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
+  padding-top: 50px;
 }
 
 h1 {
