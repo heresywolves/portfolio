@@ -156,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/webpack.png */ \"./src/img/webpack.png\");\n/* harmony import */ var _img_npm_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/npm.png */ \"./src/img/npm.png\");\n/* harmony import */ var _img_jest_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/jest.png */ \"./src/img/jest.png\");\n/* harmony import */ var _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/javascript.png */ \"./src/img/javascript.png\");\n/* harmony import */ var _img_github_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/github.png */ \"./src/img/github.png\");\n/* harmony import */ var _img_node_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/node.png */ \"./src/img/node.png\");\n/* harmony import */ var _img_three_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/three.png */ \"./src/img/three.png\");\n/* harmony import */ var _img_babel_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/babel.png */ \"./src/img/babel.png\");\n/* harmony import */ var _img_react_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/react.png */ \"./src/img/react.png\");\n/* harmony import */ var _img_sass_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/sass.png */ \"./src/img/sass.png\");\n/* harmony import */ var _img_vue_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./img/vue.png */ \"./src/img/vue.png\");\n\n\n\n\n\n\n\n\n\n\n\n\nfunction Init (doc) {\n  const skills = [\n    {\n      text: \"JavaScript (ES5+)\",\n      image: _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__\n    },\n    {\n      text: \"NPM\",\n      image: _img_npm_png__WEBPACK_IMPORTED_MODULE_1__\n    },\n    {\n      text: \"Webpack\",\n      image: _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__\n    },\n    {\n      text: \"Jest\",\n      image: _img_jest_png__WEBPACK_IMPORTED_MODULE_2__\n    },\n    {\n      text: \"React (+Redux)\",\n      image: _img_react_png__WEBPACK_IMPORTED_MODULE_8__\n    },\n    {\n      text: \"Vue\",\n      image: _img_vue_png__WEBPACK_IMPORTED_MODULE_10__\n    },\n    {\n      text: \"Babel\",\n      image: _img_babel_png__WEBPACK_IMPORTED_MODULE_7__\n    },\n    {\n      text: \"Node\",\n      image: _img_node_png__WEBPACK_IMPORTED_MODULE_5__\n    },\n    {\n      text: \"ThreeJS\",\n      image: _img_three_png__WEBPACK_IMPORTED_MODULE_6__\n    },\n    {\n      text: \"Git\",\n      image: _img_github_png__WEBPACK_IMPORTED_MODULE_4__\n    }\n  ]\n\n  skills.forEach((item) => {\n    const container = document.createElement('div');\n    if (item.image) {\n      const img = document.createElement('img');\n      img.classList.add('skill-img');\n      img.src = item.image;\n      container.appendChild(img);\n    }\n    const text = document.createElement('p');\n    text.classList.add('skill-text');\n    text.textContent = item.text;\n    container.appendChild(text);\n    container.classList.add('skill-item-container');\n    doc.appendChild(container);\n  })\n\n}\n\nlet techStack = (() => {return {Init}})();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (techStack);\n\n//# sourceURL=webpack://portfolio/./src/techStack.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/webpack.png */ \"./src/img/webpack.png\");\n/* harmony import */ var _img_npm_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/npm.png */ \"./src/img/npm.png\");\n/* harmony import */ var _img_jest_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/jest.png */ \"./src/img/jest.png\");\n/* harmony import */ var _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/javascript.png */ \"./src/img/javascript.png\");\n/* harmony import */ var _img_github_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/github.png */ \"./src/img/github.png\");\n/* harmony import */ var _img_node_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/node.png */ \"./src/img/node.png\");\n/* harmony import */ var _img_three_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/three.png */ \"./src/img/three.png\");\n/* harmony import */ var _img_babel_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/babel.png */ \"./src/img/babel.png\");\n/* harmony import */ var _img_react_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/react.png */ \"./src/img/react.png\");\n/* harmony import */ var _img_vue_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/vue.png */ \"./src/img/vue.png\");\n/* harmony import */ var _img_linux_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./img/linux.png */ \"./src/img/linux.png\");\n/* harmony import */ var _img_figma_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./img/figma.png */ \"./src/img/figma.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\nfunction Init (doc) {\n  const skills = [\n    {\n      text: \"JavaScript (ES5+)\",\n      image: _img_javascript_png__WEBPACK_IMPORTED_MODULE_3__\n    },\n    {\n      text: \"NPM\",\n      image: _img_npm_png__WEBPACK_IMPORTED_MODULE_1__\n    },\n    {\n      text: \"Webpack\",\n      image: _img_webpack_png__WEBPACK_IMPORTED_MODULE_0__\n    },\n    {\n      text: \"Jest\",\n      image: _img_jest_png__WEBPACK_IMPORTED_MODULE_2__\n    },\n    {\n      text: \"React (+Redux)\",\n      image: _img_react_png__WEBPACK_IMPORTED_MODULE_8__\n    },\n    {\n      text: \"Vue\",\n      image: _img_vue_png__WEBPACK_IMPORTED_MODULE_9__\n    },\n    {\n      text: \"Babel\",\n      image: _img_babel_png__WEBPACK_IMPORTED_MODULE_7__\n    },\n    {\n      text: \"Node\",\n      image: _img_node_png__WEBPACK_IMPORTED_MODULE_5__\n    },\n    {\n      text: \"ThreeJS\",\n      image: _img_three_png__WEBPACK_IMPORTED_MODULE_6__\n    },\n    {\n      text: \"Git\",\n      image: _img_github_png__WEBPACK_IMPORTED_MODULE_4__\n    },\n    {\n      text: \"Linux\",\n      image: _img_linux_png__WEBPACK_IMPORTED_MODULE_10__\n    },\n    {\n      text: \"Figma\",\n      image: _img_figma_png__WEBPACK_IMPORTED_MODULE_11__ \n    },\n  ]\n\n  skills.forEach((item) => {\n    const container = document.createElement('div');\n    if (item.image) {\n      const img = document.createElement('img');\n      img.classList.add('skill-img');\n      img.src = item.image;\n      container.appendChild(img);\n    }\n    const text = document.createElement('p');\n    text.classList.add('skill-text');\n    text.textContent = item.text;\n    container.appendChild(text);\n    container.classList.add('skill-item-container');\n    doc.appendChild(container);\n  })\n\n}\n\nlet techStack = (() => {return {Init}})();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (techStack);\n\n//# sourceURL=webpack://portfolio/./src/techStack.js?");
 
 /***/ }),
 
@@ -207,6 +207,16 @@ eval("module.exports = __webpack_require__.p + \"ec1569c50583164e85a4.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"845310557b8b0400f438.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/dashboard-phone.png?");
+
+/***/ }),
+
+/***/ "./src/img/figma.png":
+/*!***************************!*\
+  !*** ./src/img/figma.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"46400ab8543f71a3650b.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/figma.png?");
 
 /***/ }),
 
@@ -277,6 +287,16 @@ eval("module.exports = __webpack_require__.p + \"be934370814d2071a113.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"ef0e8e364c157706e9b4.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/library-pc.png?");
+
+/***/ }),
+
+/***/ "./src/img/linux.png":
+/*!***************************!*\
+  !*** ./src/img/linux.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"2471a7083a54eca9f12a.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/linux.png?");
 
 /***/ }),
 
@@ -357,16 +377,6 @@ eval("module.exports = __webpack_require__.p + \"8541b143aec91404e0e4.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"227aa4bfbfea726aa318.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/restaurant-pc.png?");
-
-/***/ }),
-
-/***/ "./src/img/sass.png":
-/*!**************************!*\
-  !*** ./src/img/sass.png ***!
-  \**************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"7cdbf6b5889c42b3e490.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/sass.png?");
 
 /***/ }),
 
