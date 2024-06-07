@@ -7,8 +7,9 @@ import nodeImg from './img/node.png'
 import threeImg from './img/three.png'
 import babelImg from './img/babel.png'
 import reactImg from './img/react.png'
-import sassImg from './img/sass.png'
 import vueImg from './img/vue.png'
+import linuxImg from './img/linux.png'
+import figmaImg from './img/figma.png'
 
 function Init (doc) {
   const skills = [
@@ -51,7 +52,15 @@ function Init (doc) {
     {
       text: "Git",
       image: githubImg
-    }
+    },
+    {
+      text: "Linux",
+      image: linuxImg
+    },
+    {
+      text: "Figma",
+      image: figmaImg 
+    },
   ]
 
   skills.forEach((item) => {
