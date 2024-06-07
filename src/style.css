@@ -473,10 +473,16 @@ body.dark .project-live-link::before {
 #contact {
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .contact-list li {
   margin: 10px 0;
+  font-size: 30px;
+}
+
+body.dark .contact-list li a:hover {
+  color: rgb(179, 255, 0);
 }
 
 section.contact-section {
