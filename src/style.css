@@ -333,13 +333,18 @@ h3.stack-heading.dark:after {
 
 /* Projects */
 
+h2#work {
+  margin-bottom: 0;
+  text-align: center;
+}
+
 
 .projects-container {
   margin-top: 20px;
 }
 
 .project-container {
-  margin: 100px 0;
+  margin: 150px 0;
   display: grid;
   grid-template-columns: 1fr min-content;
   gap: 50px;
@@ -355,8 +360,39 @@ h3.stack-heading.dark:after {
   grid-row: 1;
 }
 
+.project-container:nth-child(even) {
+  grid-template-columns: min-content 1fr;
+}
+
+.project-container:nth-child(even) .img-container {
+  grid-column: 1;
+}
+
+.project-container:nth-child(even) .text-container {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.project-container:nth-child(even) .project-phone-img {
+  left: -20px;
+}
+
+.project-container a {
+  cursor: pointer;
+}
+
+body.dark .project-container a:hover {
+  color: rgb(179, 255, 0);
+}
+
 body.dark .project-name {
   color: var(--dark-link-color);
+}
+
+.project-name {
+  font-size: 35px;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .project-pc-img {
@@ -366,8 +402,8 @@ body.dark .project-name {
 .project-phone-img {
   width: 150px;
   position: absolute;
-  bottom: -30px;
-  right: -80px;
+  bottom: -40px;
+  right: -20px;
 }
 
 .project-live-link {

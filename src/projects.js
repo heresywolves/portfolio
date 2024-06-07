@@ -14,53 +14,53 @@ export let Projects = (() => {
       name: 'Панель администратора',
       pc: dashboardPC,
       phone: dashboardPhone,
-      description: 'Страница панели администратора в современном стиле, которая демонстрирует всю прелесть адаптивной grid и flex верстки.',
+      description: 'Статичная страница панели администратора в современном стиле, которая демонстрирует всю прелесть адаптивной grid и flex верстки.',
       stack: 'JS, HTML, CSS',
       github: 'https://github.com/howlbones/admin-dashboard',
       live: 'https://howlbones.github.io/admin-dashboard/'
     },
     todo: {
-      name: 'ToDo App',
+      name: 'Таск-менеджер',
       pc: todoPC,
       phone: '',
-      description: 'Fully functioning app that lets you organize, create and check off completed tasks. Website uses browsers local storage.',
-      stack: 'Vanilla JS, HTML, CSS, Webpack',
+      description: 'Полноценный трекер для организации задач. Задачи можно создавать, редактировать, присваивать к категориям и отмечать как выполненные. Приложение использует localStorage браузера в качестве хранилища.',
+      stack: 'JS, HTML, CSS, Webpack',
       github: 'https://github.com/howlbones/todo-list',
       live: 'https://howlbones.github.io/todo-list/'
     },
     weather: {
-      name: 'Weather App',
+      name: 'Прогноз погоды',
       pc: weatherPC,
       phone: '',
-      description: "This app works with external API's for fresh weather data, easy on-demand search suggestions and pictures based on the weather.",
-      stack: 'Vanilla JS, HTML, CSS, Webpack',
+      description: "Это приложение работает с внешними API для отображения актуальной и подробной информации о текущей и будущей погоде любого города мира. Картинки подтягиваются из внешних источников на основе текущей погоды.",
+      stack: 'JS, HTML, CSS, Webpack',
       github: 'https://github.com/howlbones/weather-app',
       live: 'https://howlbones.github.io/weather-app/'
     },
     form: {
-      name: 'Online Form',
+      name: 'Современная форма',
       pc: formPC,
       phone: formPhone,
-      description: "Responsive fill-out form that utilises JavaScript for client-side validation.",
-      stack: 'Vanilla JS, HTML, CSS',
+      description: "Адаптивная форма с динамической валидацией полей.",
+      stack: 'JS, HTML, CSS',
       github: 'https://github.com/howlbones/online-form',
       live: 'https://howlbones.github.io/online-form/'
     },
     restaurant: {
-      name: 'Restaurant Menu',
+      name: 'Меню ресторана',
       pc: restaurantPC,
       phone: '',
-      description: "A simple, clean restaurant homepage design that generates page content dynamically throughout tabs.",
-      stack: 'Vanilla JS, HTML, CSS, Webpack',
+      description: "Сайт демонстрирует динамическую генерацию содержимого страницы при переключении вкладок.",
+      stack: 'JS, HTML, CSS, Webpack',
       github: 'https://github.com/howlbones/restaurant-menu',
       live: 'https://howlbones.github.io/restaurant-menu/'
     },
     library: {
-      name: 'Library App',
+      name: 'Личная онлайн библиотека',
       pc: libraryPC,
       phone: '',
-      description: "Personal online library application that can keep track of saved books by different markings and display statistics.",
-      stack: 'Vanilla JS, HTML, CSS, Webpack',
+      description: "Персональный треккер прочитанных и непрочитанных книг со статистикой, категориями и сортировкой.",
+      stack: 'JS, HTML, CSS, Webpack',
       github: 'https://github.com/howlbones/library-app',
       live: 'https://howlbones.github.io/library-app/'
     }
@@ -81,8 +81,10 @@ export let Projects = (() => {
       imgContainer.href = projectsObj[key].live;
       imgContainer.setAttribute("target", "_blank");
 
-      const nameEl = document.createElement('p');
+      const nameEl = document.createElement('a');
       nameEl.classList.add('project-name');
+      nameEl.href = projectsObj[key].live;
+      nameEl.setAttribute("target", "_blank");
       nameEl.textContent = projectsObj[key].name;
       txtContainer.appendChild(nameEl);
 
