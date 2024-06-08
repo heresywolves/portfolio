@@ -266,6 +266,56 @@ img.my-photo {
   margin-right: 120px;
 }
 
+/* Skills */
+h3.skills-heading {
+  font-size: 30px;
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto 50px auto;
+  text-align: center;
+}
+
+h3.skills-heading:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background-color: #1a202c;
+  top: 50%;
+  left: 0;
+}
+
+body.dark h3.skills-heading:before{
+  background-color: var(--dark-txt-color);
+}
+
+h3.skills-heading:after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background-color: #1a202c;
+  top: 50%;
+  right: 0;
+}
+
+body.dark h3.skills-heading:after {
+  background-color: var(--dark-txt-color);
+}
+
+.skills-container li {
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+.skills-container li {
+  font-size: 25px;
+  list-style: square;
+  margin-bottom: 20px;
+}
+
 /* Tech stack */
 h3.stack-heading {
   font-size: 30px;
