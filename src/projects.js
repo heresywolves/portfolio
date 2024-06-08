@@ -46,6 +46,15 @@ export let Projects = (() => {
       github: 'https://github.com/howlbones/admin-dashboard',
       live: 'https://howlbones.github.io/admin-dashboard/'
     },
+    chessclub: {
+      name: 'Шахматный Клуб',
+      pc: chessclubPC,
+      phone: chessclubPhone,
+      description: "Адаптивный лендинг шахматного клуба с анимациями и слайдерами картинок.",
+      stack: "JS, HTML, CSS, Webpack",
+      github: "https://github.com/howlbones/black-knights-club-showcase",
+      live: "https://howlbones.github.io/black-knights-club-showcase/"
+    },
     todo: {
       name: 'Таск-менеджер',
       pc: todoPC,
@@ -55,6 +64,24 @@ export let Projects = (() => {
       github: 'https://github.com/howlbones/todo-list',
       live: 'https://howlbones.github.io/todo-list/'
     },
+    cart: {
+      name: 'Каталог + Корзина',
+      pc: cartPC,
+      phone: '',
+      description: "Пример двух взаимосвязанных страниц каталога и корзины. Каталог товаров формируется используя внешний API.",
+      stack: 'React, Vite, JS, HTML, CSS',
+      github: 'https://github.com/howlbones/shopping-cart',
+      live: 'https://shopping-cart-six-gilt.vercel.app/'
+    },
+    cvbuilder: {
+      name: 'Конструктор Резюме',
+      pc: cvbuilderPC,
+      phone: '',
+      description: 'Полноценное онлайн приложения для создания резюме. Заполняя форму, результат моментально виден в предпросмотре резюме. Есть возможность выгрузить результат в формате PDF.',
+      stack: 'React, Vite, JS, HTML, CSS',
+      github: 'https://github.com/howlbones/cv-application',
+      live: 'https://cv-application-vert.vercel.app/'
+    },
     weather: {
       name: 'Прогноз погоды',
       pc: weatherPC,
@@ -63,15 +90,6 @@ export let Projects = (() => {
       stack: 'JS, HTML, CSS, Webpack',
       github: 'https://github.com/howlbones/weather-app',
       live: 'https://howlbones.github.io/weather-app/'
-    },
-    chessclub: {
-      name: 'Шахматный Клуб',
-      pc: chessclubPC,
-      phone: chessclubPhone,
-      description: "Адаптивный лендинг шахматного клуба с анимациями и слайдерами картинок.",
-      stack: "JS, HTML, CSS, Webpack",
-      github: "https://github.com/howlbones/black-knights-club-showcase",
-      live: "https://howlbones.github.io/black-knights-club-showcase/"
     },
     pokemon: {
       name: 'Игра для памяти - Pokemon',
@@ -109,24 +127,6 @@ export let Projects = (() => {
       github: 'https://github.com/howlbones/library-app',
       live: 'https://howlbones.github.io/library-app/'
     },
-    cart: {
-      name: 'Каталог + Корзина',
-      pc: cartPC,
-      phone: '',
-      description: "Пример двух взаимосвязанных страниц каталога и корзины. Каталог товаров формируется используя внешний API.",
-      stack: 'React, Vite, JS, HTML, CSS',
-      github: 'https://github.com/howlbones/shopping-cart',
-      live: 'https://shopping-cart-six-gilt.vercel.app/'
-    },
-    cvbuilder: {
-      name: 'Конструктор Резюме',
-      pc: cvbuilderPC,
-      phone: '',
-      description: 'Полноценное онлайн приложения для создания резюме. Заполняя форму, результат моментально виден в предпросмотре резюме. Есть возможность выгрузить результат в формате PDF.',
-      stack: 'React, Vite, JS, HTML, CSS',
-      github: 'https://cv-application-vert.vercel.app/',
-      live: 'https://github.com/howlbones/cv-application'
-    }
   }
 
   function load() {

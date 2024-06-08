@@ -373,7 +373,7 @@ h3.stack-heading.dark:after {
 
 .stack-container img {
   width: 40px;
-  height: min-content;
+  /* height: min-content; */
 }
 
 .skill-item-container {
@@ -389,7 +389,6 @@ h2#work {
   margin-bottom: 0;
   text-align: center;
 }
-
 
 .projects-container {
   margin-top: 20px;
