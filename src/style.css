@@ -13,7 +13,7 @@ html {
 }
 
 :root {
-  --link-color: #001571;
+  --link-color: #343479;
   --main-bg-color: #f0e7db;
   --main-txt-color: #1a202c;
   /* --main-secondary-color:#f5f0e8; */
@@ -246,7 +246,8 @@ h2 {
   font-size: 40px;
   font-weight: 650;
   margin-top: 60px;
-  margin-bottom: 12px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 p {
@@ -460,11 +461,33 @@ body.dark .project-live-link::before {
   pointer-events: none;
 }
 
+/* Other projects */
+.other-projects {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.other-projects li {
+  margin-bottom: 20px;
+}
+
+body.dark .other-projects a:hover{
+  color: rgb(179, 255, 0);
+}
+
 
 /* Hobbies */
 
 .hobbies-header, .contact-header {
   margin-top: 50px;
+}
+
+body.dark .hobbies a:hover {
+  color: rgb(179, 255, 0);
+}
+
+.hobbies {
+  margin-bottom: 100px;
 }
 
 
