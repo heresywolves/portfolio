@@ -28,6 +28,11 @@ li {
   list-style-type: none;
 }
 
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
 body {
   background-color: var(--main-bg-color);
   overflow-x: hidden;

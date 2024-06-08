@@ -12,6 +12,9 @@ import { typewriterEffect } from './typewriterEffect';
 
 document.addEventListener("DOMContentLoaded", () => {
   let isDomLoaded = false;
+  const content = document.querySelector('.window-container');
+  content.style.visibility = "visible";
+  content.classList.remove('hidden');
 
   const checkBothLoaded = () => {
     if (isDomLoaded && isModelLoaded) {
