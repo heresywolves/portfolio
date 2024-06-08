@@ -7,9 +7,36 @@ import formPC from './img/form-pc.png'
 import formPhone from './img/form-phone.png'
 import libraryPC from './img/library-pc.png'
 import restaurantPC from './img/restaurant-pc.png'
+import gerichtPC from './img/gericht-pc.png'
+import gerichtPhone from './img/gericht-phone.png'
+import gpt3PC from './img/gpt3-pc.png'
+import gpt3Phone from './img/gpt3-phone.png'
+import cartPC from './img/cart-pc.png'
+import cvbuilderPC from './img/cvbuilder-pc.png'
+import pokemonPC from './img/pokemon-pc.png'
+import chessclubPC from './img/chessclub-pc.png'
+import chessclubPhone from './img/chessclub-phone.png'
 
 export let Projects = (() => {
   let projectsObj = {
+    gericht: {
+      name: 'Ресторан Gericht',
+      pc: gerichtPC,
+      phone: gerichtPhone,
+      description: 'Адаптивный лендинг с выпадающим меню на мобильных. Используется методология БЭМ и компонентный подход верстки.',
+      stack: "React, Vite, JS, HTML, CSS",
+      github: "https://github.com/howlbones/gerich-restaurant",
+      live: "https://howlbones.github.io/gerich-restaurant/"
+    },
+    gpt3: {
+      name: 'GPT-3 Лендинг',
+      pc: gpt3PC,
+      phone: gpt3Phone,
+      description: "Адаптивный лендинг технологий GPT. Страница создана используя методологию БЭМ с современными стандартами.",
+      stack: "React, Vite, JS, HTML, CSS",
+      github: "https://github.com/howlbones/gpt3-landing",
+      live: "https://howlbones.github.io/gpt3-landing/"
+    },
     dashboard: {
       name: 'Панель администратора',
       pc: dashboardPC,
@@ -37,6 +64,24 @@ export let Projects = (() => {
       github: 'https://github.com/howlbones/weather-app',
       live: 'https://howlbones.github.io/weather-app/'
     },
+    chessclub: {
+      name: 'Шахматный Клуб',
+      pc: chessclubPC,
+      phone: chessclubPhone,
+      description: "Адаптивный лендинг шахматного клуба с анимациями и слайдерами картинок.",
+      stack: "JS, HTML, CSS, Webpack",
+      github: "https://github.com/howlbones/black-knights-club-showcase",
+      live: "https://howlbones.github.io/black-knights-club-showcase/"
+    },
+    pokemon: {
+      name: 'Игра для памяти - Pokemon',
+      pc: pokemonPC,
+      phone: '',
+      description: "Правила просты - чтобы выйграть, необходимо нажимать на те карточки с покемонами, которые ещё небыли выбраны ранее. Доступно несколько уровней сложности. Коллекция покемонов огромна - для их генерации используется внешний API pokeapi.co",
+      stack: 'React, Vite, JS, HTML, CSS',
+      github: 'https://github.com/howlbones/memory-card-game',
+      live: 'https://memory-card-game-jet-ten.vercel.app/'
+    },
     form: {
       name: 'Современная форма',
       pc: formPC,
@@ -63,6 +108,24 @@ export let Projects = (() => {
       stack: 'JS, HTML, CSS, Webpack',
       github: 'https://github.com/howlbones/library-app',
       live: 'https://howlbones.github.io/library-app/'
+    },
+    cart: {
+      name: 'Каталог + Корзина',
+      pc: cartPC,
+      phone: '',
+      description: "Пример двух взаимосвязанных страниц каталога и корзины. Каталог товаров формируется используя внешний API.",
+      stack: 'React, Vite, JS, HTML, CSS',
+      github: 'https://github.com/howlbones/shopping-cart',
+      live: 'https://shopping-cart-six-gilt.vercel.app/'
+    },
+    cvbuilder: {
+      name: 'Конструктор Резюме',
+      pc: cvbuilderPC,
+      phone: '',
+      description: 'Полноценное онлайн приложения для создания резюме. Заполняя форму, результат моментально виден в предпросмотре резюме. Есть возможность выгрузить результат в формате PDF.',
+      stack: 'React, Vite, JS, HTML, CSS',
+      github: 'https://cv-application-vert.vercel.app/',
+      live: 'https://github.com/howlbones/cv-application'
     }
   }
 

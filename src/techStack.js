@@ -7,7 +7,7 @@ import nodeImg from './img/node.png'
 import threeImg from './img/three.png'
 import babelImg from './img/babel.png'
 import reactImg from './img/react.png'
-import vueImg from './img/vue.png'
+import viteImg from './img/vite.png'
 import linuxImg from './img/linux.png'
 import figmaImg from './img/figma.png'
 
@@ -34,8 +34,8 @@ function Init (doc) {
       image: reactImg
     },
     {
-      text: "Vue",
-      image: vueImg
+      text: "Vite",
+      image: viteImg
     },
     {
       text: "Babel",
