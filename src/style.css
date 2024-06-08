@@ -30,7 +30,7 @@ li {
 
 body {
   background-color: var(--main-bg-color);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body.dark {
