@@ -2,6 +2,9 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import modelImport from './keyboard.gltf';
+import { spinnerLoader } from './spinnerLoader';
+
+export let isModelLoaded = false;
 
 export let threemodel = (() => {
 
@@ -21,13 +24,16 @@ function init(color) {
   const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
   const cube = new THREE.Mesh( geometry, material );
 
-
   //model
   let model;
   const loader = new GLTFLoader();
   loader.load(modelImport, gltf => {
     model = gltf.scene;
     scene.add(gltf.scene);
+    isModelLoaded = true;
+    if (isModelLoaded) {
+      spinnerLoader.close();
+    }
   },
     function (error) {
       console.log('Error: ' + error);

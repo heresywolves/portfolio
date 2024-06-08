@@ -3,14 +3,25 @@ import './style.css'
 import './loadImages'
 import techStack from './techStack'
 import { Projects } from './projects';
-import { threemodel } from './threemodel';
+import { threemodel, isModelLoaded } from './threemodel';
 import { typewriterEffect } from './typewriterEffect';
 // import resume from './resume.pdf';
 
 
 // Spinner loader
 
-document.addEventListener("DOMContentLoaded", spinnerLoader.close);
+document.addEventListener("DOMContentLoaded", () => {
+  let isDomLoaded = false;
+
+  const checkBothLoaded = () => {
+    if (isDomLoaded && isModelLoaded) {
+      spinnerLoader.close();
+    }
+  }
+
+  isDomLoaded = true;
+  checkBothLoaded();
+});
 
 
 // Render page
