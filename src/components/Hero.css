@@ -1,0 +1,74 @@
+.hero {
+  background-size: auto 55%;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+
+.hero__slider {
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: heroSliderSpin 20s linear infinite;
+  z-index: 2;
+}
+
+@keyframes heroSliderSpin {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  } 
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+  
+}
+
+.hero__card {
+  transform:
+    rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+    translateZ(550px);
+}
+
+.hero__content {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+}
+
+.hero__content h1 {
+  font-family: 'ICA Rubrik';
+  font-size: 12em;
+  line-height: 1em;
+  color:rgb(25, 25, 25);
+  position: relative;
+}
+
+.hero__content h1::after {
+  position: absolute;
+  inset: 0 0 0 0;
+  content: attr(data-content);
+  z-index: 2;
+  -webkit-text-stroke: 2px #d2d2d2;
+  color: transparent;
+}
+
+.hero__author {
+  text-align: right;
+  max-width: 200px;
+  font-family: 'Rubik';
+  font-weight: 100;
+}
+
+.hero__author h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.hero__model {
+  width: 100%;
+  height: 75vh;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
